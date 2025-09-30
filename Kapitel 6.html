@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>PNP Projekt</title>
+  <meta name="description" content="Kurze Beschreibung der Webseite">
+  <meta name="author" content="Dein Name">
+  <link rel="stylesheet" href="stylekapitel6.css">
+</head>
+<body>
+
+<h1 id="kap6">Kapitel 6 – Kampfregeln</h1>
+
+<h2>1. Rundenablauf</h2>
+<ol>
+  <li><strong>Initiative:</strong> Alle würfeln 1W20. Höchste Zahl beginnt, dann absteigend.</li>
+  <li><strong>Aktion wählen:</strong> Bewegung, Angriff, Zauber, Spezialaktion.</li>
+  <li><a href="Kapitel 5.html"><strong>Trefferprobe:</strong></a> Passendes Attribut + Modifikatoren + Spezialwürfel gegen Zielwert. Zielwert-Berechnung kann z. B. aus <code>(Wahrnehmung + Geschicklichkeit)/2</code> erfolgen; Hinterhalte senken diesen Wert.</li>
+  <li><strong>Schaden berechnen:</strong> Grundschaden + Schadenswurf der Waffe.</li>
+  <li><strong>Kritische Treffer prüfen.</strong></li>
+  <li><strong>Schaden anwenden:</strong> Rüstungswert abziehen (nicht bei  kritischen Treffern).</li>
+  <li><strong><a href="Kapitel 8.html">AP</a> prüfen:</strong> Überlastungsprobe bei Überschreitung.</li>
+  <li>Eine Runde dauert 12 Sekunden Spielzeit.</li>
+</ol>
+
+
+<h2>2. Kritische Treffer</h2>
+<ul>
+  <li>Voraussetzung: neutrale Stellung (DM entscheidet ggf. Sonderfälle).</li>
+  <li>DM + alle boni legen eine Vorteilsstufe (0–12) fest.</li>
+  <li>Wurf: 2W6, Ziel = <code>12 − Vorteilsstufe</code>. Bei Erfolg wird der Gesamtschaden (Grund + Wurf) verdoppelt.</li>
+  <li>Ein einzelner Zauber kann nur kritisch treffen, wenn er Teil eines kombinierten Angriffs ist (z. B. verzauberte Waffe) denn zauber alleine können keine Kritischen Treffer treffen.</li>
+</ul>
+
+
+<h2>3. Zustände und Schadensarten</h2>
+<p>Gängige Schadensarten und typische Effekte:</p>
+<table border="1">
+  <thead>
+    <tr><th>Schadensart</th><th>Typischer Effekt / Quelle</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Stich</td><td>Spitze Waffen (Pfeile, Dolche)</td></tr>
+    <tr><td>Hieb/Schlitz</td><td>Schwerter/Äxte; evtl. Heilungsdauer an Wunden</td></tr>
+    <tr><td>Wucht</td><td>Ignoriert 2 Rüstung (z. B. Hämmer, Stürze)</td></tr>
+    <tr><td>Feuer</td><td>Initialer Schaden + anhaltend (z. B. Flammen), gelegentlich Brenn-Status</td></tr>
+    <tr><td>Kälte</td><td>Schaden + mögliche Betäubung bis Befreiung</td></tr>
+    <tr><td>Blitz</td><td>Schaden + Betäubung (Dauer variabel)</td></tr>
+    <tr><td>Donner</td><td>Betäubung 2 Runden</td></tr>
+    <tr><td>Gift</td><td>Malus auf Proben (andere Effekte möglich)</td></tr>
+  </tbody>
+</table>
+<p>Weitere Effeckte können von dem DM Deffiniert und angepasst werden</p>
+
+<h2>4. Gelände- und Taktikboni</h2>
+<ul>
+  <li>Gelände, Deckung und Taktiken bieten Modifikatoren auf Proben, Initiative oder Trefferwürfe (DM entscheidet die Werte).</li>
+  <li>Positionsvorteile (z. B. Hinterhalt) senken Zielwerte oder fügen Vorteile auf Angriffe hinzu.</li>
+</ul>
+<p>(Hinweis: Hinterhalte wurden in den Trefferprobe-Abschnitten als wichtig genannt).</p>
+
+<h2>5. Spezialaktionen</h2>
+<p>Beispiele für Spezialaktionen (Kurzbeschreibung):</p>
+<ul>
+  <li><strong>Umreißen:</strong> Statt Schaden eine Geschick-Probe; bei Erfolg Ziel am Boden (Ziel erhält −1W6 Verteidigung; 2 <a href="Kapitel 8.html">AP</a> zum Aufstehen).</li>
+  <li><strong>Halten/Greifen:</strong> Kraft-Probe; Erfolg = Ziel bewegungsunfähig bis Befreiung.</li>
+  <li>Spezialaktionen haben AP-Kosten; die Tabelle AP → maximaler Waffen-Schaden (Orientierung aus Regeln):</li>
+</ul>
+<table border="1">
+  <thead>
+    <tr><th><a href="Kapitel 8.html">AP-Kosten</a></th><th>Max. Waffen-Schaden (Orientierungswerte)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1 AP</td><td>4</td></tr>
+    <tr><td>2 AP</td><td>7</td></tr>
+    <tr><td>3 AP</td><td>10</td></tr>
+    <tr><td>4 AP</td><td>15</td></tr>
+    <tr><td>5 AP</td><td>20</td></tr>
+  </tbody>
+</table>
+<p>Diese Werte dienen als Balancerichtlinie, da Waffen-Typ-Zusatzschaden mit einbezogen wird (kein Minimum, nur Maximalwert).</p>
+
+<h2>6. Verletzungen un Tod</h2>
+<ol>
+  <li><strong>Schaden nehmen:</strong> Schaden wird von aktuellen Lebenspunkten abgezogen. DM kann zusätzliche Strafen bei kritischen Körperteilverletzungen verhängen.</li>
+  <li><strong>Leben auf 0:</strong> Fällt ein Charakter auf 0 Leben, muss er sofort <code>1W6 + Ausdauer-<a href="Kapitel 1.html">Modifikator</a></code> würfeln. Das Ergebnis gibt an, wie viele Runden Mitspieler Zeit haben, den Charakter zu stabilisieren/zu retten.</li>
+  <li><strong>Rettungsversuche:</strong>
+    <ul>
+      <li>Rettung erfordert eine <a href="Kapitel 5.html">Multiprobe</a> (Geschicklichkeit, Weisheit, Gesundheit).</li>
+      <li>Zielwert = hälfte (des Gesundheits Attribut + <a href="Kapitel 8.html">Klassen spezifische leben</a> * LVL/ 20)</li>
+    </ul>
+  </li>
+  <li><strong>Selbstrettung:</strong> Spieler können sich selbst retten, müssen dabei aber eine <a href="Kapitel 5.html">Multiprobe</a> mit 1 Punkt <a href="Kapitel 5.html">Nachteil</a> (2W20, schlechtesten Wurf nehmen) bestehen; Zielwert wie oben.</li>
+  <li><strong>Erfolgreiche Rettung:</strong> Lebenskraft steigt sofort auf 1/4 der maximalen Lebenspunkte (außer spezifische Heilmethoden geben andere Werte).</li>
+</ol>
+<p>Details und exakte Proben (Attribute, Nachteil-Regel) sind im Regeltext beschrieben. </p>
+
+<h2>7.Waffenfertigkeit</h2>
+<p>Jeder spieler Charaktär hat mehrere Waffenfertigkeiten welche zur folge haben das der charaktär waffen arten nutzen kann. dann ist die Waffenfertigkeit für einen waffe noch in stufen eingestufft nähmlich kann die waffe nicht benutzen: d.h. der spieler muss bei jedem angrief mit dieser waffe mit nachteil würfeln.
+er hat kann die waffe nutzen: d.h. der spieler kann die waffe ganz normal nutzen und kriegt kein vor oder nachteil bei der nutzung dieser und er ist profesio nell in der nutzung seiner waffe: d.h. der spieler kiegt einen vorteil bei krit würfen mit der waffe und +1 auf alle treffer proben</p>
+
+<button><a href="Kapitel 5.html">vohärige seite</a></button><button><a href="index.html">Inhaltsverzeichnis</a></button><button><a href="Kapitel 7.html">nächste seite </a></button>
+
+
+</body>
