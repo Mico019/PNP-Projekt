@@ -1,4 +1,9 @@
 img
 {
-	width: 10%
+	max-width: 30%;
+	higth: auto;
+	display: block;
+	margin: 10px auto;
+	border-radiuns: 10px;
+	box-schadow 0 4px 8px rgba(0,0,0,0.2); 
 }
