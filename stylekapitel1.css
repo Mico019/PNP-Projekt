@@ -9,15 +9,17 @@ body {
 
 .menu
 {
-	button img
-	{
-		width: auto;
-		height: 20px;
+	button {
+    display: inline-flex;      
+    align-items: center;        
+    justify-content: center;    
+    gap: 5px;                   
+    padding: 5px 10px;          
 	}
-	button
-	{
-		width: auto;
-		height: 20px;
+
+	button img {
+    width: 90%;                
+    height: 90%;               
 	}
 }
 
