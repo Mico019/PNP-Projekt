@@ -13,8 +13,7 @@ body {
     display: inline-flex;      
     align-items: center;        
     justify-content: center;    
-    gap: 5px;                   
-    padding: 5px 10px;          
+    gap: 5px;                             
 	}
 
 	button img {
