@@ -9,9 +9,10 @@ body {
 
 .menu
 {
-	img
+	button img
 	{
-		width: 5%;
+		width: 20px;
+		height: 20px;
 	}
 }
 
