@@ -3,7 +3,8 @@ body {
   background-repeat: no-repeat;      
   background-size: cover;            
   background-position: center;       
-  background-attachment: fixed;      
+  background-attachment: fixed;
+  filter: brightness(1.3) contrast(0.8);
 }
 
 h1
