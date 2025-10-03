@@ -1,0 +1,95 @@
+<body>
+<h1>Zauber-Liste — Zusatzmodul (v1)</h1>
+
+<p>Diese Liste nutzt deinen <strong>Zauberbaukasten</strong>:
+<ul>
+<li>Basis-Zielwerte: <strong>Leicht 7</strong>, <strong>Mittel 11</strong>, <strong>Schwer 14</strong>, <strong>Episch 18</strong>.</li>
+<li>Modifikatoren werden addiert für <em>Wirkungsbereich</em>, <em>Dauer</em> und <em>Reichweite</em> (z. B. Fläche +4, Minuten +2, 31–50 m +8 → siehe Einträge).</li>
+<li>AP-Kosten = <code>ceil(Zielwert / 4)</code>. Legendäre Zauber sind Spezialfälle (AP ≥ 18).</li>
+</ul>
+</p>
+
+<p class="note">Hinweis zur Schadensbalance: Unmittelbarer Schaden ist grob an eine AP-Skala angepasst (z. B. 1AP≈4, 2AP≈7, 3AP≈10, 4AP≈15, 5AP≈20). Flächenschaden ist pro Ziel deutlich niedriger oder als anhaltender Schaden angegeben.</p>
+
+<section>
+<h2>Zauber-Übersicht</h2>
+<table>
+<thead><tr><th>Name</th><th>Stufe</th><th>Zusammensetzung</th><th>Zielwert</th><th>AP</th><th>Wirkung / Schaden</th><th>Nebenwirkung</th></tr></thead>
+<tbody>
+<tr><td>Feuerpfeil</td><td>Leicht</td><td>Leicht · Einzelziel · Sofort · Reichweite: 6–15 m</td><td>11</td><td>3</td><td>Feuerschaden: ~10 (Momentan)</td><td>kleine Materialkosten / Fehlschlag: Funken auf Caster</td></tr>
+
+<tr><td>Flammensturm</td><td>Mittel</td><td>Mittel · Fläche · Sofort · Reichweite: 31–50 m</td><td>23</td><td>6</td><td>Große Fläche: Flächenschaden (gesamt hoch, pro Ziel reduziert), anhaltender Brand</td><td>Große Materialkosten, Geländebrand möglich</td></tr>
+
+<tr><td>Inferno-Lanze</td><td>Schwer</td><td>Schwer · Einzelziel · Sofort · Reichweite: 6–15 m</td><td>18</td><td>5</td><td>Hoher direkter Feuerschaden: ~20</td><td>Starke Erschöpfung bei Fehlschlag</td></tr>
+
+<tr><td>Flammenmeer</td><td>Episch</td><td>Episch · Fläche · Minuten · Reichweite: 31–50 m</td><td>32</td><td>8</td><td>Massiver Flächenschaden + anhaltender Brand für mehrere Runden</td><td>Gelände nachhaltig zerstört; hoher Materialverbrauch</td></tr>
+
+<tr><td>Frostgriff</td><td>Leicht</td><td>Leicht · Einzelziel · Sofort · Reichweite: 6–15 m</td><td>11</td><td>3</td><td>Kälteschaden: ~10 + Verlangsamung</td><td>Bei Fehlschlag: Caster erfriert leicht (−1 AP)</td></tr>
+
+<tr><td>Eiswand</td><td>Mittel</td><td>Mittel · Einzelziel · Minuten · Reichweite: 16–30 m</td><td>15</td><td>4</td><td>Errichtet Barriere aus Eis (Blockiert Bewegung/Projektile)</td><td>Schmilzt in warmen Umgebungen schneller</td></tr>
+
+<tr><td>Gletscherstoß</td><td>Schwer</td><td>Schwer · Fläche · Sofort · Reichweite: 16–30 m</td><td>22</td><td>6</td><td>Flächenschaden (Kälte) + starker Verlangsamungs-Effekt</td><td>Rutschiger Untergrund, Taktik ändert sich</td></tr>
+
+<tr><td>Froststatuette</td><td>Mittel</td><td>Mittel · Einzelziel · Stunden · Reichweite: 0–1 m</td><td>15</td><td>4</td><td>Verwandelt Ziel kurz in eine Eisstatue (Handlungsunfähigkeit / Schutz)</td><td>Bei Fehlschlag: Ziel erleidet brüchige Risse</td></tr>
+
+<tr><td>Blitzschlag</td><td>Leicht</td><td>Leicht · Einzelziel · Sofort · Reichweite: 16–30 m</td><td>13</td><td>4</td><td>Blitzschaden: ~15, Ziel 1 Runde betäubt</td><td>Stromschlag kann Ausrüstungsgegenstände beschädigen</td></tr>
+
+<tr><td>Kettenblitz</td><td>Mittel</td><td>Mittel · Einzelziel (ketten) · Sofort · Reichweite: 31–50 m</td><td>19</td><td>5</td><td>Blitz trifft mehrere Ziele in Kette, je Treffer reduziert</td><td>Kann Metallrüstungen stärker treffen</td></tr>
+
+<tr><td>Donnerschlag</td><td>Schwer</td><td>Schwer · Einzelziel · Sofort · Reichweite: 31–50 m</td><td>22</td><td>6</td><td>Großer Knall: Schaden + 2 Runden Betäubung in Radius</td><td>Laute Störung; Ohrenprobleme</td></tr>
+
+<tr><td>Sturmrufer</td><td>Episch</td><td>Episch · Riesige Fläche · Sofort · Reichweite: 51+ m</td><td>28</td><td>7</td><td>Riesenflächen-Wettereffekt (Blitz/Wind/Schaden über Zeit)</td><td>Große ökologische Folgen, kann Schiffe versenken</td></tr>
+
+<tr><td>Heilende Hand</td><td>Leicht</td><td>Leicht · Einzelziel · Sofort · Reichweite: 0–1 m</td><td>7</td><td>2</td><td>Heilt sofort ~6–8 LP</td><td>Geringe Materialkosten</td></tr>
+
+<tr><td>Großflächen-Heilung</td><td>Mittel</td><td>Mittel · Kleine Gruppe · Sofort · Reichweite: 0–1 m</td><td>13</td><td>4</td><td>Heilt bis zu 3 Ziele, je Ziel ~ (APabhängig) geteilt</td><td>Hoher Fokus; Caster erschöpft</td></tr>
+
+<tr><td>Regenerationssegen</td><td>Schwer</td><td>Schwer · Kleine Gruppe · Minuten · Reichweite: 0–1 m</td><td>18</td><td>5</td><td>Stabile Regeneration: +X LP pro Runde für einige Runden</td><td>Kann bei missbrauch temporäre Abhängigkeit auslösen</td></tr>
+
+<tr><td>Massenauferstehung</td><td>Episch</td><td>Episch · Fläche · Stunden · Reichweite: 51+ m</td><td>30</td><td>8</td><td>Erweckt mehrere Gefallene (stark ressourcenintensiv)</td><td>Hohe Nebenwirkung: Lebenspunktverlust beim Caster</td></tr>
+
+<tr><td>Schild</td><td>Leicht</td><td>Leicht · Einzelziel · Sofort · Reichweite: 0–1 m</td><td>7</td><td>2</td><td>+1–2 Rüstung für X Runden oder absorbiert bis ~8 Schaden</td><td>Geringe Materialkosten</td></tr>
+
+<tr><td>Magische Rüstung</td><td>Mittel</td><td>Mittel · Einzelziel · Minuten · Reichweite: 0–1 m</td><td>15</td><td>4</td><td>+2–4 Rüstung für Dauer</td><td>Bei Riss: Rüstung verliert Bonus</td></tr>
+
+<tr><td>Barriere</td><td>Schwer</td><td>Schwer · Fläche · Minuten · Reichweite: 0–1 m</td><td>20</td><td>5</td><td>Große feste Barriere, schützt vor Angriffen</td><td>Schafft Engpässe; Materialverbrauch hoch</td></tr>
+
+<tr><td>Unsichtbarkeit</td><td>Mittel</td><td>Mittel · Einzelziel · Minuten · Reichweite: 0–1 m</td><td>15</td><td>4</td><td>Ziel unsichtbar bis Angriff/Zauber</td><td>Bricht bei Aktion; hohe Aufmerksamkeit bei Magie</td></tr>
+
+<tr><td>Blendlicht</td><td>Leicht</td><td>Leicht · Einzelziel · Sofort · Reichweite: 16–30 m</td><td>13</td><td>4</td><td>Blendung: Sicht für 1 Runde stark eingeschränkt</td><td>Kann Teammitglieder beeinträchtigen</td></tr>
+
+<tr><td>Illusionswand</td><td>Schwer</td><td>Schwer · Fläche · Minuten · Reichweite: 16–30 m</td><td>22</td><td>6</td><td>Große, glaubhafte Illusion über Zeit (Verwirrung)</td><td>Bei Auflösung: mentale Erschöpfung</td></tr>
+
+<tr><td>Gedankenfessel</td><td>Mittel</td><td>Mittel · Einzelziel · Minuten · Reichweite: 31–50 m</td><td>19</td><td>5</td><td>Kontroll-/Beherrschungsversuch; Ziel kann Widerstand leisten</td><td>Bei Fehlschlag: geistige Gegenreaktion</td></tr>
+
+<tr><td>Schlaf</td><td>Mittel</td><td>Mittel · Kleine Gruppe · Sofort · Reichweite: 16–30 m</td><td>17</td><td>5</td><td>Versetzt kleine Gruppe in Schlaf (Zielwert vs. Weisheit/Wissen)</td><td>Gefährlich bei Gegnern mit hohem Schaden (Todesrisiko)</td></tr>
+
+<tr><td>Blindheit</td><td>Leicht</td><td>Leicht · Einzelziel · Minuten · Reichweite: 16–30 m</td><td>11</td><td>3</td><td>Blindheit: −AW & Nachteil auf Fernkampf/Sehen (Minuten)</td><td>Bei Massenwirkung: Panik möglich</td></tr>
+
+<tr><td>Beschwörung Wolf</td><td>Mittel</td><td>Mittel · Einzelziel · Minuten · Reichweite: 0–1 m</td><td>15</td><td>4</td><td>Beschwört 1 Wolf (Verbündeter für Dauer)</td><td>Beschworene Kreatur kann entgleiten</td></tr>
+
+<tr><td>Beschwörung Elementar</td><td>Schwer</td><td>Schwer · Einzelziel · Minuten · Reichweite: 0–1 m</td><td>18</td><td>5</td><td>Beschwört kleines Elementar (Feuer/Eis/Blitz) für Kampf</td><td>Elementar kann Umgebung schädigen</td></tr>
+
+<tr><td>Teleport</td><td>Schwer</td><td>Schwer · Einzelziel · Sofort · Reichweite: 31–50 m</td><td>18</td><td>5</td><td>Teleportiert Ziel/Gruppe bis zur Reichweite (Risiko bei Fehlschlag)</td><td>Mistransferrisiko, Materialkosten</td></tr>
+
+<tr><td>Kurzdistanz-Teleport</td><td>Mittel</td><td>Mittel · Einzelziel · Sofort · Reichweite: 6–15 m</td><td>15</td><td>4</td><td>Teleport kurz (Taktische Positionierung)</td><td>Geringes Risiko</td></tr>
+
+<tr><td>Zeitverzerrer</td><td>Episch</td><td>Episch · Kleine Gruppe · Minuten · Reichweite: 0–1 m</td><td>22</td><td>6</td><td>Verlangsamt/Beschleunigt Aktionen in Zone (AP-Modifikator)</td><td>Kann stabile Zeitparadoxa erzeugen</td></tr>
+
+<tr><td>Fluch der Schwäche</td><td>Leicht</td><td>Leicht · Einzelziel · Minuten · Reichweite: 16–30 m</td><td>11</td><td>3</td><td>Senkt Attribut(e) / Schaden des Ziels temporär</td><td>Bei Verbreitung: soziale Konsequenzen</td></tr>
+
+<tr><td>Seelenentzug</td><td>Schwer</td><td>Schwer · Einzelziel · Sofort · Reichweite: 31–50 m</td><td>22</td><td>6</td><td>Entzieht Lebenspunkte & wandelt in Caster-Ressource um</td><td>Moraler Preis; Risiko für Caster</td></tr>
+
+<tr><td>Bannfeuer</td><td>Mittel</td><td>Mittel · Kleine Gruppe · Sofort · Reichweite: 16–30 m</td><td>15</td><td>4</td><td>Reinigt Debuffs und Buffs im Zielbereich</td><td>Heilige/Unheilige Nebenwirkung auf bestimmte Kreaturen</td></tr>
+
+<tr><td>Manaquelle</td><td>Mittel</td><td>Mittel · Einzelziel · Stunden · Reichweite: 0–1 m</td><td>15</td><td>4</td><td>Erzeugt temporäre AP/Mana für Caster oder Gruppe (+AP pro Runde)</td><td>Bei Überladung: Rückstoß</td></tr>
+
+<tr><td>Weltenbrand (Legendär)</td><td>Legendär</td><td>Legendär · Riesige Fläche · Sofort · Reichweite: 31–50 m (Sonderregeln)</td><td>Legendär (Sonderregeln)</td><td>>=18</td><td>WELTENVERÄNDERNDER Flächenschaden; Spezialprobe nötig (siehe Regelwerk)</td><td>Katastrophale Nebenwirkungen, dauerhafte Zerstörung</td></tr>
+
+</tbody>
+</table>
+</section>
+
+<p class="note">Erklärung: Zielwert-Berechnung = Basis(Effektstufe) + Wirkungsbereich + Dauer + Reichweite. AP = ceil(Zielwert/4). Legendäre Zauber folgen den Regeln im Regelwerk (natürliche 20 + Multiproben etc.).</p>
+
+</body>
