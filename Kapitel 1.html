@@ -53,15 +53,17 @@
 		</ul>
 		
 	<h2>3. Modifikatoren</h2>
-		<p>Berechnung:(Attribut - 10) / 2, aufgerundet.<br>
-		Ab Attribut 30:(Attribut - 10) / 3, steigt alle 10 Attribute um 1</p>
+		<p>Berechnung:(Attribut(Max:30) - 10) / 2, aufgerundet.<br>
+		Ab Attribut 30:(Attribut(Max:40) - 30) / 3,<br>
+		Ab Attribut 40:(Attribut(Max:50) - 40) / 4, der Divisor steigt alle 10 Attribute um 1 und der Subtrahend steigt 10 <br>
+		<strong>WICHTIG:</strong> die Modifikatoren wachsen immer langsammer und weden Nicht alle 10 Attribut Neu berechnet Z.B. der Stärke-MOD auf Attribut 45 würde (30 - 10) / 2 + (40 - 30) / 3 + (45 - 40) / 4 = 20/2+10/3+5/4=14,583 also ein Modfikator von 15</p>
 		
 	<h2>4. Restliche Werte berechnen</h2>
 		<ul>
   		<li> <a href="Kapitel 8.html"> AP </a> = 4 + Ausdauer</li>
   		<li>AW (Ausweichwahrscheinlichkeit) = (Wahrnehmung + Geschicklichkeit) / 2
    		<ul>
-      	<li>ab 20 AW verdoppelt sich der Divisor alle 10 AW</li>
+      	<li>ab 20 AW verdoppelt sich der Divisor alle 10 AW und es funktionirt nach dem Gleichn prinzip wie Bei den Modifikatioren</li>
     	</ul>
   		</li>
 		</ul>
