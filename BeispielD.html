@@ -15,48 +15,69 @@
 <button><a href="BeispielC.html">vohärige seite</a></button><button><a href="Tutorials.html">Tutorials</a></button><button><a href="Beispiel1.html">nächste seite</a></button></button><button><a href="Kapitel D.html">Kapitel 13</a></button>
 </div>
 <div class="content">
-  <h3>Beispiel 1: Schwacher Trank (Heiltrank)</h3>
-<p><strong>Trankstufe:</strong> Schwach (Zielwert 10–15)</p>
-<p><strong>Material:</strong> Standardkraut → max. Stufe: Schwach, max. Qualität: Normal</p>
+  <h3>Beispiele: Alchemie mit Multi-Modifikator</h3>
 
-<table border="1" cellpadding="5" cellspacing="0">
-<tr><th>Attribut</th><th>Wurf (1W20)</th><th>Modifikator</th><th>Ergebnis</th><th>Zielwert</th><th>Differenz</th></tr>
-<tr><td>Weisheit</td><td>11</td><td>+1</td><td>12</td><td>13</td><td>-1</td></tr>
-<tr><td>Geschicklichkeit</td><td>14</td><td>+1</td><td>15</td><td>13</td><td>+2</td></tr>
-<tr><td>Wahrnehmung</td><td>10</td><td>+1</td><td>11</td><td>13</td><td>-2</td></tr>
-</table>
-
-<p><strong>Restpunkteberechnung:</strong> -1 + 2 - 2 = -1 → Qualität: Normal (auf Basis Multyprobe)</p>
-<p><strong>Endwirkung:</strong> Basis-Heilung 5 LP → Qualität Normal → 5 LP Heilung</p>
+<h4>Beispiel 1: Einfacher Heiltrank (Normal, Zielwert 15)</h4>
+<p><strong>Alchemist-Attribute:</strong> Weisheit 12, Geschick 13, Wahrnehmung 11<br>
+Multi-Mod = (12 + 13 + 11) / 2 = <strong>36 / 2 = 18</strong><br>
+Zielwert für alle 3 Proben: <strong>15</strong></p>
 
 
-<h3>Beispiel 2: Starker Trank (Starker Buff)</h3>
-<p><strong>Trankstufe:</strong> Stark (Zielwert 20–25)</p>
-<p><strong>Material:</strong> Hochwertige Kräuter → max. Stufe: Stark, max. Qualität: Sehr gut</p>
+<p><strong>Probe 1:</strong> W20 = 13 → 13 &lt; 15 → Es fehlen 2 Punkte.<br>
+Wir zahlen 2 aus dem Multi-Mod-Vorrat → Rest: 18 – 2 = <strong>16</strong><br>
+Probe 1 geschafft.</p>
 
-<table border="1" cellpadding="5" cellspacing="0">
-<tr><th>Attribut</th><th>Wurf (1W20)</th><th>Modifikator</th><th>Ergebnis</th><th>Zielwert</th><th>Differenz</th></tr>
-<tr><td>Weisheit</td><td>16</td><td>+2</td><td>18</td><td>22</td><td>-4</td></tr>
-<tr><td>Geschicklichkeit</td><td>19</td><td>+2</td><td>21</td><td>22</td><td>-1</td></tr>
-<tr><td>Wahrnehmung</td><td>15</td><td>+1</td><td>16</td><td>22</td><td>-6</td></tr>
-</table>
+<p><strong>Probe 2:</strong> W20 = 18 → 18 ≥ 15 → kein Multi-Mod nötig → Rest bleibt <strong>16</strong><br>
+Probe 2 geschafft.</p>
 
-<p><strong>Restpunkteberechnung:</strong> -4 -1 -6 = -11 → Qualität: Gut</p>
-<p><strong>Endwirkung:</strong> Basis-Buff +6 → Qualität Gut (+50%) → Effekt +9</p>
+<p><strong>Probe 3:</strong> W20 = 12 → 12 &lt; 15 → Es fehlen 3 Punkte.<br>
+Wir zahlen 3 → Rest: 16 – 3 = <strong>13</strong><br>
+Probe 3 geschafft.</p>
+
+<p><strong>Ergebnis:</strong> Alle drei Proben bestanden, 13 Punkte übrig.<br>
+Rest = <strong>13</strong> → nach Qualitäts-Tabelle = <strong>Sehr gut</strong> (+100 % Wirkung).</p>
+
+<h4>Beispiel 2: Starker Stärketrank (Stark, Zielwert 20)</h4>
+<p><strong>Alchemist-Attribute:</strong> Weisheit 14, Geschick 12, Wahrnehmung 12<br>
+Multi-Mod = (14 + 12 + 12) / 2 = <strong>38 / 2 = 19</strong><br>
+Zielwert: <strong>20</strong></p>
+
+<p><strong>Probe 1:</strong> W20 = 19 → 19 &lt; 20 → Es fehlt 1 Punkt.<br>
+Wir zahlen 1 → Rest: 19 – 1 = <strong>18</strong><br>
+Probe 1 geschafft.</p>
+
+<p><strong>Probe 2:</strong> W20 = 11 → 11 &lt; 20 → Es fehlen 9 Punkte.<br>
+Wir zahlen 9 → Rest: 18 – 9 = <strong>9</strong><br>
+Probe 2 geschafft.</p>
+
+<p><strong>Probe 3:</strong> W20 = 8 → 8 &lt; 20 → Es fehlen 12 Punkte.<br>
+Wir haben nur 9 Punkte übrig → <strong>nicht genug → Probe scheitert.</strong></p>
 
 
-<h3>Beispiel 3: Legendärer Trank (Vollheilung + Zusatzwirkung)</h3>
-<p><strong>Trankstufe:</strong> Legendär (Zielwert 30–40)</p>
-<p><strong>Material:</strong> Seltene Zutaten → max. Stufe: Legendär, max. Qualität: Legendär</p>
+<p><strong>Ergebnis:</strong> Trankbrauen misslingt bei Probe 3.<br>
+Kein fertiger Trank → Gebräu gilt als <strong>ungenießbar</strong> oder verfällt.</p>
 
-<table border="1" cellpadding="5" cellspacing="0">
-<tr><th>Attribut</th><th>Wurf (1W20)</th><th>Modifikator</th><th>Ergebnis</th><th>Zielwert</th><th>Differenz</th></tr>
-<tr><td>Weisheit</td><td>18</td><td>+3</td><td>21</td><td>35</td><td>-14</td></tr>
-<tr><td>Geschicklichkeit</td><td>20</td><td>+3</td><td>23</td><td>35</td><td>-12</td></tr>
-<tr><td>Wahrnehmung</td><td>17</td><td>+2</td><td>19</td><td>35</td><td>-16</td></tr>
-</table>
 
-<p><strong>Restpunkteberechnung:</strong> -14 -12 -16 = -42 → Qualität: Legendär (besondere Regel für Legendäre Tränke)</p>
-<p><strong>Endwirkung:</strong> Vollheilung 50 LP + Zusatzwirkung (z. B. temporäre Unverwundbarkeit 1 Runde)</p>
+<h4>Beispiel 3: Legendärer Manatrank (Legendär, Zielwert 30)</h4>
+<p><strong>Alchemist-Attribute:</strong> Weisheit 16, Geschick 15, Wahrnehmung 14<br>
+Multi-Mod = (16 + 15 + 14) / 2 = <strong>45 / 2 = 22</strong><br>
+Zielwert: <strong>30</strong></p>
+
+
+<p><strong>Probe 1:</strong> W20 = 27 → 27 &lt; 30 → Es fehlen 3 Punkte.<br>
+Wir zahlen 3 → Rest: 22 – 3 = <strong>19</strong><br>
+Probe 1 geschafft.</p>
+
+<p><strong>Probe 2:</strong> W20 = 29 → 29 &lt; 30 → Es fehlt 1 Punkt.<br>
+Wir zahlen 1 → Rest: 19 – 1 = <strong>18</strong><br>
+Probe 2 geschafft.</p>
+
+<p><strong>Probe 3:</strong> W20 = 30 → 30 ≥ 30 → kein Multi-Mod nötig → Rest bleibt <strong>18</strong><br>
+Probe 3 geschafft.</p>
+
+
+<p><strong>Ergebnis:</strong> Alle drei Proben bestanden, 18 Punkte übrig.<br>
+Rest = <strong>18</strong> → nach Qualitäts-Tabelle = <strong>Episch</strong> (+200 % Wirkung, fast perfektes Brauen).</p>
+
 </div>
 </body>
