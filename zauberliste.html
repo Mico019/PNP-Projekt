@@ -11,7 +11,12 @@
   <link rel="stylesheet" href="stylebilder.css">
 </head>
 <body>
-<h1>Zauber-Liste — Zusatzmodul (v1)</h1>
+  <div class="menu">
+<button><a href="zusatzverzeichnis.html">Zusatzverzeichnis</a></button>
+</div>
+	
+<div class="content">
+<h1>Zauber-Liste</h1>
 
 <p>Diese Liste nutzt deinen <strong>Zauberbaukasten</strong>:
 <ul>
@@ -21,20 +26,11 @@
 </ul>
 </p>
 
-<div class="content"> 
-<h2>Zauber-Übersicht</h2>
+<h2>Zauberer-Zauber-Übersicht</h2>
 <table border="1" cellspacing="0">
 <thead>
 <tr>
-<th>Name</th>
-<th>Stufe</th>
-<th>ZL</th>
-<th>Zusammensetzung</th>
-<th>Zielwert</th>
-<th>AP</th>
-<th>Wirkung / Schaden</th>
-<th>Nebenwirkung</th>
-</tr>
+<th>Name</th><th>Stufe</th><th>ZL</th><th>Zusammensetzung</th><th>Zielwert</th><th>AP</th><th>Wirkung / Schaden</th><th>Nebenwirkung</th></tr>
 </thead>
 <tbody>
 <tr><td>Feuerpfeil</td><td>Leicht</td><td>1</td><td>Leicht · Einzelziel · Sofort · Reichweite: 6–15 m</td><td>11</td><td>3</td><td>Feuerschaden: 1W10 +2W4 Für 2 Runden</td><td>Trifft den Zauberer</td></tr>
@@ -61,7 +57,7 @@
 <tr><td>Schlaf</td><td>Mittel</td><td>3</td><td>Mittel · Kleine Gruppe · Sofort · Reichweite: 16–30 m</td><td>17</td><td>5</td><td>Versetzt Gegner bis 50 LP in Schlaf für 4 Runden</td><td>Gefährlich bei Gegnern mit hohem Schaden</td></tr>
 <tr><td>Blindheit</td><td>Leicht</td><td>1</td><td>Leicht · Einzelziel · Minuten · Reichweite: 16–30 m</td><td>11</td><td>3</td><td>Blindheit: −5 AW & Nachteil 5 Runden</td><td>Zauberer erblindet</td></tr>
 <tr><td>Beschwörung Wolf</td><td>Mittel</td><td>3</td><td>Mittel · Einzelziel · Minuten · Reichweite: 0–1 m</td><td>15</td><td>4</td><td>Beschwört 1 Wolf (Verbündeter für 10 Runden, 1 Angriff pro Runde MOD:5 LP: Spieler LP/2 Schaden 1W12)</td><td>Beschworene Kreatur kann entgleiten</td></tr>
-<tr><td>Beschwörung Elementar</td><td>Schwer</td><td>4</td><td>Schwer · Einzelziel · Minuten · Reichweite: 0–1 m</td><td>18</td><td>5</td><td>Beschwört kleines Elementar (Feuer 1*3W6 / Eis 1*2W8 / Blitz 2*1W8) für Kampf</td><td>Elementar kann Gruppe angreifen</td></tr>
+<tr><td>Beschwörung Elementar</td><td>Schwer</td><td>4</td><td>Schwer · Einzelziel · Minuten · Reichweite: 0–1 m</td><td>18</td><td>5</td><td>Beschwört kleines Elementar (Feuer 1*3W6 / Eis 1*2W8 -5M BR / Blitz 2*1W8 eine Runde Stunn) für Kampf</td><td>Elementar kann Gruppe angreifen</td></tr>
 <tr><td>Teleport</td><td>Schwer</td><td>4</td><td>Schwer · Einzelziel · Sofort · Reichweite: 31–50 m</td><td>18</td><td>5</td><td>Teleportiert Ziel/Gruppe bis zur Reichweite</td><td>-5W8 LP für alle teleportierenden</td></tr>
 <tr><td>Kurzdistanz-Teleport</td><td>Mittel</td><td>3</td><td>Mittel · Einzelziel · Sofort · Reichweite: 6–15 m</td><td>15</td><td>4</td><td>Teleport kurz (taktische Positionierung)</td><td>Teleportiert direkt neben Gegner</td></tr>
 <tr><td>Zeitverzerrer</td><td>Episch</td><td>6</td><td>Episch · Kleine Gruppe · Minuten · Reichweite: 6–15 m</td><td>22</td><td>6</td><td>überspringt Aktionen von bis zu 4 Gegnern</td><td>überspringt Aktionen von 4 Teammitgliedern</td></tr>
@@ -103,8 +99,6 @@
 <tr><td>Runenverderbnis</td><td>Legendär</td><td>7</td><td>Legendär · Fläche · Sofort · Reichweite: 31–50 m</td><td>note</td><td>18</td><td>Rune explodiert chaotisch: 5W20 Schaden + zufälliger Debuff für alle (auch Verbündete) in einem 10 Meter Radius</td><td>50 % Chance auf Selbsttreffer</td></tr>
 </tbody>
 </table>
-
-
 <p class="note">note(Legendärezauber):Multyproben-Zielwert-Berechnung = Wirkungsbereich + Dauer + Reichweite (natürliche 20 + Multiproben ).</p>
 </div>
 </body>
