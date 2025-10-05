@@ -24,6 +24,7 @@
       <li>Jede Spezialisierung hat <strong>Voraussetzungen</strong>, die erfüllt sein müssen.</li>
       <li>Höhere Stufen (z. B. „I → II“) <strong>ersetzen</strong> die vorige Stufe – sie addieren sich nicht.</li>
       <li><strong>Verschiedene Spezialisierungen addieren</strong> ihre Effekte miteinander.</li>
+	  <li><strong>Es kann IMMER nur EINE Reaktion pro runde gemacht werden</strong></li>
       <li>Es gibt <strong>keine festen Klassenbeschränkungen</strong> – du kannst frei wählen, was zu deinem Charakter passt.</li>
       <li>Balance und seltene Kombinationen werden vom <strong>Spielleiter</strong> entschieden.</li>
     </ul>
@@ -38,7 +39,7 @@
 <tr><th>Name</th><th>Level-Freischaltung</th><th>Effekt</th><th>Voraussetzungen</th></tr>
 </thead>
 <tbody>
-<tr><td>Schildfertigkeit</td><td>1</td><td>Kann Von einem Angriff pro Runde den Schaden halbiren in dem er eine W20 probe mit dem Zielwert 20 auf schild fertigkeit schafft</td><td>keine</td></tr>	
+<tr><td>Schildfertigkeit</td><td>1</td><td>Reaktion: Kann Von einem Angriff pro Runde den Schaden halbiren in dem er eine W20 probe mit dem Zielwert 20 auf schild fertigkeit schafft</td><td>keine</td></tr>	
 <tr><td>Zwei-Waffen-Führung</td><td>1</td><td>Kann zwei Waffen gleichzeitig führen, 2 Angriffe pro Runde mit −25 % AP-Kosten</td><td>keine</td></tr>
 <tr><td>Schildmeister</td><td>1</td><td>+1 AW beim Einsatz von Schilden</td><td>Schildfertigkeit</td></tr>
 <tr><td>Rüstungsprofi</td><td>1</td><td>−1 AP für Bewegungen in Rüstung</td><td>keine</td></tr>
@@ -168,6 +169,7 @@
 <tr><td>Schattentänzer</td><td>10</td><td>+2 auf Heimlichkeitsproben und +1 Schaden aus dem Hinterhalt</td><td>Tarnungskünstler</td></tr>
 <tr><td>Meister der Verwirrung</td><td>10</td><td>+1W6 auf Täuschungs- und Bluff-Proben</td><td>Bluff</td></tr>
 <tr><td>Überragender Stratege</td><td>10</td><td>Verbündete in Reichweite +1 Initative </td><td>Taktiker oder Kampftaktiker</td></tr>
+<tr><td>Schildmeister II</td><td>10</td><td>+1 AW beim Einsatz von Schilden +1W4 auf Schild proben</td><td>Schildfertigkeit</td></tr>
 </tbody>
 </table>
 	
@@ -202,7 +204,7 @@
 <tr><th>Name</th><th>Level-Freischaltung</th><th>Effekt</th><th>Voraussetzungen</th></tr>
 </thead>
 <tbody>
-<tr><td>Arkane Gegenwehr</td><td>20</td><td>Reaktion: Zahle 1W6 AP, um den Zauberwurf eines Gegners um −1W4 zu erschweren (1× pro Runde)</td><td>Spellcaster</td></tr>
+<tr><td>Arkane Gegenwehr</td><td>20</td><td>Reaktion: Zahle 1W6 AP, um den Zauberwurf eines Gegners den du siehst um −1W4 zu erschweren (1× pro Runde)</td><td>Spellcaster</td></tr>
 <tr><td>Rückzugsschritt</td><td>20</td><td>Reaktion: Wenn ein Gegner dich angreift, darfst du dich sofort 2 m bewegen (keine AP-Kosten, 1× pro Runde)</td><td>keine</td></tr>
 <tr><td>Kritische Riposte</td><td>20</td><td>Reaktion: Wenn ein Gegner verfehlt, führe sofort 1 Nahkampfangriff bei −1W4 AP aus (1× pro Runde)</td><td>Nahkampf-Spezialist II</td></tr>
 <tr><td>Elementarabwehr</td><td>20</td><td>Reaktion: Bei Elementarschaden reduziere Schaden um 1W8 (kostet 1W4 AP, 1× pro Runde)</td><td>Schutzzauber-Fokus II oder Elementarkunde II</td></tr>
@@ -210,22 +212,21 @@
 <tr><td>Rückschlag des Glaubens</td><td>20</td><td>Reaktion: Wenn du Schaden nimmst, füge dem Angreifer 1W6 heiligen Schaden zu (1× pro Runde)</td><td>Heilige Magie II</td></tr>
 <tr><td>Täuschender Schritt</td><td>20</td><td>Reaktion: Wenn ein Nahkampfangriff dich verfehlt, +1W4 AW gegen den nächsten Angriff bis Rundenende (1× pro Runde)</td><td>Akrobat II</td></tr>
 <tr><td>Zwei-Waffen-Führung III</td><td>20</td><td>Zusätzliche −1W4 AP-Kosten für beide Angriffe</td><td>Zwei-Waffen-Führung II</td></tr>
-<tr><td>Schildmeister III</td><td>20</td><td>+1W4 AW zusätzlich, +1W4 auf Schildreaktionen</td><td>Schildmeister II</td></tr>
-<tr><td>Rüstungsprofi III</td><td>20</td><td>−1W4 AP für alle Bewegungsaktionen in Rüstung</td><td>Rüstungsprofi II</td></tr>
+<tr><td>Schildmeister III</td><td>20</td><td>+2 AW zusätzlich, +1W4 auf Schildreaktionen</td><td>Schildmeister II</td></tr>
 <tr><td>Feuerzauber-Fokus III</td><td>20</td><td>Feuerzauber +1W8 Schaden</td><td>Feuerzauber-Fokus II</td></tr>
 <tr><td>Blitzzauber-Fokus III</td><td>20</td><td>Blitzzauber +1W8 Schaden</td><td>Blitzzauber-Fokus II</td></tr>
 <tr><td>Heilzauber-Fokus III</td><td>20</td><td>Heilzauber +1W8 Heilung</td><td>Heilzauber-Fokus II</td></tr>
-<tr><td>Meister der Initiative II</td><td>20</td><td>+1W4 Initiative zusätzlich zu bisherigen Boni</td><td>Meister der Initiative</td></tr>
+<tr><td>Meister der Initiative II</td><td>20</td><td>+1W6 Initiative zusätzlich zu bisherigen Boni</td><td>Meister der Initiative</td></tr>
 <tr><td>Verstärkte Ausdauer II</td><td>20</td><td>+1W6 LP Bonus</td><td>Verstärkte Ausdauer</td></tr>
 <tr><td>Waffenkundiger II</td><td>20</td><td>+1W4 Schaden mit gewähltem Waffentyp</td><td>Waffenkundiger</td></tr>
+<tr><td>Rüstungsprofi </td><td>20</td><td>−1 AP für alle Bewegungsaktionen in Rüstung</td><td>keine</td></tr>
 <tr><td>Standhafte Haltung</td><td>20</td><td>+1W4 AW, wenn du dich diese Runde nicht bewegt hast</td><td>keine</td></tr>
 <tr><td>Anführer des Trupps</td><td>20</td><td>Verbündete im Umkreis +1W4 auf Moral/Willensproben</td><td>Kampftaktiker</td></tr>
-<tr><td>Arkane Effizienz</td><td>20</td><td>Zauber mit Dauer kosten −1W4 AP pro Runde</td><td>Spellcaster</td></tr>
+<tr><td>Arkane Effizienz</td><td>20</td><td>Zauber mit Dauer kosten −1W4 AP 1x pro Runde</td><td>Spellcaster</td></tr>
 <tr><td>Perfekter Fokus</td><td>20</td><td>+1W4 auf alle Konzentrations-/Kanalisationsproben</td><td>Spellcaster</td></tr>
 <tr><td>Schneller Griff</td><td>20</td><td>+1W4 auf Waffenwechsel oder Ziehen von Tränken</td><td>keine</td></tr>
 <tr><td>Hart im Nehmen</td><td>20</td><td>Reduziert jeden erlittenen Schaden um 1 (Minimum 1)</td><td>keine</td></tr>
-<tr><td>Meisternavigator</td><td>20</td><td>+1W4 auf Reisen, Kartenlesen und Gefahrenwarnung</td><td>Navigator II</td></tr>
-<tr><td>Meisteralchemist</td><td>20</td><td>+1W4 Qualität und Dauerhaltbarkeit von Tränken</td><td>Alchemistische Praxis</td></tr>
+<tr><td>Meisteralchemist</td><td>20</td><td>+1W4 Qualität von Tränken</td><td>Alchemistische Praxis</td></tr>
 
 </tbody>
 </table
