@@ -45,5 +45,35 @@
   <li>Lange Ruhe: mind. 6 Stunden (bei Unterbrechung bis zu 8h).</li>
   <li>Werte können durch Effekte verändert werden.z.b. zauber die bonus heilung bei einer Ruhe geben</li>
 </ul>
+
+<hr>
+<h3>Aktionssystem (überarbeitet)</h3>
+
+<p>
+Jede Runde darf ein Charakter bis zu <b>2 Aktionen</b> ohne Mehrkosten durchführen. 
+Aktionen können <b>halbe (0,5)</b> oder <b>volle (1)</b> Aktionen sein. 
+Das erlaubt flexiblere und schnellere Spielzüge.
+</p>
+
+<ul>
+  <li><b>Bewegung:</b> 0,5 Aktion</li>
+  <li><b>Angriff:</b> 1 Aktion</li>
+  <li><b>Nachladen:</b> 0,5 Aktion</li>
+  <li><b>Zauber oder komplexe Handlung:</b> 1 Aktion</li>
+</ul>
+
+<p>
+Möchte ein Charakter <b>mehr als 2 Aktionen</b> in derselben Runde ausführen, 
+steigen die <b>AP-Kosten exponentiell</b> an:
+</p>
+
+<pre><code>Kostenmultiplikator = 2^(Gesamtaktionen dieser Runde - 2)</code></pre>
+
+<p>
+Der Multiplikator gilt nur für die acktionen mit dem die in das feld des multy plikators kommen und wird am Ende jeder Runde wieder auf <b>1×</b> zurückgesetzt.
+</p>
+
+
+
   </div>
 </body>
