@@ -44,26 +44,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
   loadMenu();
-});
-// Alle Dropdown-Buttons holen
-const dropdowns = document.querySelectorAll('.dropdown');
-
-dropdowns.forEach(drop => {
-  const button = drop.querySelector('.dropbtn');
-
-  button.addEventListener('click', (event) => {
-    event.stopPropagation(); // verhindert, dass der Klick das Schließen auslöst
-    closeAllDropdowns(); // schließe andere offene Menüs
-    drop.classList.toggle('active'); // öffne oder schließe dieses Menü
-  });
-});
-
-// Klick außerhalb schließt alle Menüs
-document.addEventListener('click', closeAllDropdowns);
-
-function closeAllDropdowns() {
-  dropdowns.forEach(drop => drop.classList.remove('active'));
-}
 
 // -----------------------------
 // SUCHFELD EIN / AUS KLAPPEN
@@ -128,3 +108,4 @@ searchForm.addEventListener('submit', (event) => {
 
   searchInput.value = '';
 });
+
