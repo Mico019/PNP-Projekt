@@ -24,26 +24,25 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       });
     }catch(e){}
-    // dropdown behavior: use same logic as existing menus: hover + click toggle for mobile
-    var drops = container.querySelectorAll(".dropdown");
-    drops.forEach(function(dd){
-      dd.addEventListener("click", function(ev){
-        // toggle only when clicking the parent link
-        var target = ev.target;
-        if(target.tagName.toLowerCase()==="a" && target.parentElement === dd){
-          ev.preventDefault();
-          dd.classList.toggle("open");
-        }
-      });
-      // close when clicking outside
-      document.addEventListener("click", function(ev){
-        if(!dd.contains(ev.target)){
-          dd.classList.remove("open");
-        }
-      });
-    });
-  }
-  loadMenu();
+    // Alle Dropdown-Buttons holen
+const dropdowns = document.querySelectorAll('.dropdown');
+
+dropdowns.forEach(drop => {
+  const button = drop.querySelector('.dropbtn');
+
+  button.addEventListener('click', (event) => {
+    event.stopPropagation(); // verhindert, dass der Klick das Schließen auslöst
+    closeAllDropdowns(); // schließe andere offene Menüs
+    drop.classList.toggle('active'); // öffne oder schließe dieses Menü
+  });
+});
+
+// Klick außerhalb schließt alle Menüs
+document.addEventListener('click', closeAllDropdowns);
+
+function closeAllDropdowns() {
+  dropdowns.forEach(drop => drop.classList.remove('active'));
+}
 
 // -----------------------------
 // SUCHFELD EIN / AUS KLAPPEN
