@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>PNP Projekt</title>
+  <meta name="description" content="Kurze Beschreibung der Webseite">
+  <meta name="author" content="Dein Name">
+  <link rel="stylesheet" href="stylekapitelb.css">
+<link rel="stylesheet" href="header.css">
+  <script src="header.js" defer></script>
+</head>
+<body>
+
+  <header id="menu"></header>
+	
+<div class="content">
+
+<h2>Kapitel 11 – Inventar und Lastsystem (Gewichtspunkte)</h2>
+
+<h3>11.1 Traglast (nur Kraft)</h3>
+<p>Gewichtspunkte (GP) sind eine Abstraktion für Gewicht &amp; Volumen.</p>
+<ul>
+  <li>Grundregel:
+    <ul>
+      <li>Traglast = KraftMod²+100 GP</li>
+    </ul>
+  <li>Rundung: Traglast stets als ganze Zahl notieren</li>
+</ul>
+
+<h3>11.2 Laststufen &amp; Überlastung</h3>
+<p>Berechne Gesamt-GP getragen ÷ Traglast in GP:</p>
+<ul>
+  <li>0–100 %: Normal – keine Mali</li>
+  <li>101–120 %: Leichte Last – -2 AW, +1 AP auf Angriffe</li>
+  <li>121–150 %: Mittlere Last – -5 AW, +2 AP auf Angriffe, -1 Bewegung</li>
+  <li>&gt;150 %: Schwere Last – -10 AW, +3 AP auf Angriffe, halbe Bewegung
+    <ul>
+      <li>Zusätzlich: jede Probe (außer Gesundheits-Proben) -1W6, falls DM nicht anders entscheidet</li>
+    </ul>
+  </li>
+</ul>
+
+<h3>11.3 Direkte Kampfmodifikatoren durch Gewicht</h3>
+<ul>
+  <li><strong>AP-Kosten ⇒ Waffen-Gewicht:</strong>
+    <ul>
+      <li>Waffen-Gewicht ÷ 10 = AP-Kosten (Runden)</li>
+      <li>AP-Kosten × 10 = Waffen-Gewicht</li>
+      <li>Zu wenig KraftMod: +1 AP pro fehlendem Punkt</li>
+      <li>Schwer: GP ≥ 30, Sehr leicht: GP &lt; 10</li>
+    </ul>
+  </li>
+  <li><strong>Rüstungs-Gewicht ⇒ AW-Malus:</strong>
+    <ul>
+      <li>Gesamtes Rüstungsgewicht ÷ 20 = AW-Malus</li>
+      <li>Menge an AW-Malus = Abzug auf AW</li>
+    </ul>
+  </li>
+</ul>
+
+<h3>11.4 Magie &amp; besondere Effekte (optional)</h3>
+<ul>
+  <li>Leichtgewicht-Verzauberung: -25 % GP (aufgerundet), Preis + Seltenheit nach DM</li>
+  <li>Schwerkraft-/Lastfluch: +25–50 % GP temporär</li>
+  <li>Magische Rüstung: AW-Mali können halbiert werden</li>
+</ul>
+
+<h3>11.5 Schnellreferenz</h3>
+<ul>
+  <li>Traglast = KraftMOD²+100 GP </li>
+</ul>
+
+<h3>11.6 Integration in bestehende Regeln</h3>
+<ul>
+  <li><strong>AW:</strong> Rüstungs-Mali + Laststufen-Mali kumulativ anwenden</li>
+  <li><strong>AP:</strong> Waffen-Gewicht und Laststufe erhöhen Angriffs-AP</li>
+  <li><strong>Rüstung:</strong> Kopf- und Körper-Rüstung separat gewichten</li>
+  <li><strong>Loot-Balancing:</strong> Hohe GP erzwingen Entscheidungen (verkaufen, zurücklassen, magisch erleichtern)</li>
+</ul>
+
+<p><em>Tipp:</em> Spieler sollen dokumentieren, wo sie Ausrüstung tragen – steigert die Immersion.</p>
+
+  </div>
+
+
+
+<script src="header.js"></script>
+</body>

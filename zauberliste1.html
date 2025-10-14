@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>PNP Projekt</title>
+  <meta name="description" content="Kurze Beschreibung der Webseite">
+  <meta name="author" content="Dein Name">
+  <link rel="stylesheet" href="stylezusatzmodule.css">
+</head>
+<body>
+  <div class="menu">
+<button><a href="zusatzverzeichnis.html">Zusatzverzeichnis</a></button>
+</div>
+	
+<div class="content">
+<h1>Zauber-Liste für Zauberer</h1>
+
+<p>Diese Liste nutzt deinen <strong>Zauberbaukasten</strong>:
+<ul>
+<li>Basis-Zielwerte: <strong>Leicht 7</strong>, <strong>Mittel 11</strong>, <strong>Schwer 14</strong>, <strong>Episch 18</strong>.</li>
+<li>Modifikatoren werden addiert für <em>Wirkungsbereich</em>, <em>Dauer</em> und <em>Reichweite</em> (z. B. Fläche +4, Minuten +2, 31–50 m +8 → siehe Einträge).</li>
+<li>AP-Kosten = <code>(Zielwert / 4)</code>. Legendäre Zauber sind Spezialfälle (AP ≥ 18).</li>
+</ul>
+</p>
+
+<table border="1" cellspacing="0">
+<thead>
+<tr>
+<th>Name</th><th>Stufe</th><th>ZL</th><th>Zusammensetzung</th><th>Zielwert</th><th>AP</th><th>Wirkung / Schaden</th><th>Nebenwirkung</th></tr>
+</thead>
+<tbody>
+<tr><td>Feuerpfeil</td><td>Leicht</td><td>1</td><td>Leicht · Einzelziel · Sofort · Reichweite: 6–15 m</td><td>11</td><td>3</td><td>Feuerschaden: 1W10 +2W4 Für 2 Runden</td><td>Trifft den Zauberer</td></tr>
+<tr><td>Inferno-Lanze</td><td>Schwer</td><td>4</td><td>Schwer · Einzelziel · Sofort · Reichweite: 6–15 m</td><td>18</td><td>5</td><td>Hoher direkter Feuerschaden: 1W20</td><td>+5 AP Kosten</td></tr>
+<tr><td>Flammenmeer</td><td>Episch</td><td>6</td><td>Episch · Fläche · Minuten · Reichweite: 31–50 m</td><td>32</td><td>8</td><td>5W10 Flächenschaden + permanenter 5W6 Für 10 Runden</td><td>zündet direkt beim Caster</td></tr>
+<tr><td>Frostgriff</td><td>Leicht</td><td>1</td><td>Leicht · Einzelziel · Sofort · Reichweite: 6–15 m</td><td>11</td><td>3</td><td>Kälteschaden: 1W12 -5 Meter Bewegung</td><td>Bei Fehlschlag: Caster erfriert leicht (−3 AP)</td></tr>
+<tr><td>Eiswand</td><td>Mittel</td><td>3</td><td>Mittel · Einzelziel · Minuten · Reichweite: 16–30 m</td><td>15</td><td>4</td><td>Errichtet Barriere aus Eis (Blockiert Bewegung/Projektile) 50 LP</td><td>zersplitert, trifft jeden in 15 m Radius für 1W10</td></tr>
+<tr><td>Gletscherstoß</td><td>Schwer</td><td>4</td><td>Schwer · Fläche · Sofort · Reichweite: 16–30 m</td><td>22</td><td>6</td><td>Flächenschaden 3W10 (Kälte) + Bewegungsrate halbiert</td><td>Rutschiger Untergrund</td></tr>
+<tr><td>Froststatuette</td><td>Mittel</td><td>3</td><td>Mittel · Einzelziel · Stunden · Reichweite: 0–1 m</td><td>15</td><td>4</td><td>Verwandelt Ziel in Eisstatue (Handlungsunfähigkeit) Jede Runde Stärke-Probe Ziel: 15</td><td>Beine werden eingefroren, immobilisiert</td></tr>
+<tr><td>Blitzschlag</td><td>Leicht</td><td>2</td><td>Leicht · Einzelziel · Sofort · Reichweite: 16–30 m</td><td>13</td><td>4</td><td>Blitzschaden: 3W6, Ziel 1 Runde betäubt</td><td>AP Kosten +5 für den nächsten Zauber</td></tr>
+<tr><td>Kettenblitz</td><td>Mittel</td><td>3</td><td>Mittel · Einzelziel (ketten) · Sofort · Reichweite: 31–50 m</td><td>19</td><td>5</td><td>Blitz trifft 3 Ziele in Kette, je Treffer halbiert Schaden 1W20</td><td>Kann Metallrüstungen stärker treffen</td></tr>
+<tr><td>Donnerschlag</td><td>Schwer</td><td>4</td><td>Schwer · Einzelziel · Sofort · Reichweite: 31–50 m</td><td>22</td><td>6</td><td>Großer Knall: 1W20 Schaden + 2 Runden Betäubung in Radius</td><td>4 Runden Betäubung</td></tr>
+<tr><td>Heilende Hand</td><td>Leicht</td><td>1</td><td>Leicht · Einzelziel · Sofort · Reichweite: 0–1 m</td><td>7</td><td>2</td><td>Heilt sofort 1W8 LP</td><td>Verschwendete AP</td></tr>
+<tr><td>Großflächen-Heilung</td><td>Mittel</td><td>3</td><td>Mittel · Kleine Gruppe · Sofort · Reichweite: 0–1 m</td><td>13</td><td>5</td><td>Heilt bis zu 3 Ziele, 3W4</td><td>Verschwendete AP</td></tr>
+<tr><td>Regenerationssegen</td><td>Schwer</td><td>4</td><td>Schwer · Kleine Gruppe · Minuten · Reichweite: 0–1 m</td><td>18</td><td>6</td><td>Stabile Regeneration: +1W6 LP pro Runde für 5 Runden</td><td>-1W6 LP pro Runde für 5 Runden</td></tr>
+<tr><td>Massenauferstehung</td><td>Episch</td><td>6</td><td>Episch · Fläche · Stunden · Reichweite: 51+ m</td><td>30</td><td>8</td><td>Erweckt mehrere Gefallene (1 Platin pro Wiederbelebten)</td><td>-Max LP des Auf erstehenden</td></tr>
+<tr><td>Schild</td><td>Leicht</td><td>1</td><td>Leicht · Einzelziel · Sofort · Reichweite: 0–1 m</td><td>7</td><td>2</td><td>+2 Rüstung für 10 Runden oder absorbiert bis ~20 Schaden</td><td>Verdoppelt Schaden bis 20 Schaden verteilt wurden</td></tr>
+<tr><td>Magische Rüstung</td><td>Mittel</td><td>3</td><td>Mittel · Einzelziel · Minuten · Reichweite: 0–1 m</td><td>15</td><td>4</td><td>1W4 Rüstung für 10 Runden</td><td>AW sinkt um 1W8</td></tr>
+<tr><td>Barriere</td><td>Schwer</td><td>4</td><td>Schwer · Fläche · Minuten · Reichweite: 0–1 m</td><td>20</td><td>5</td><td>Große feste Barriere, schützt bis 100 Schaden</td><td>Verdoppelt Schaden bis 100 verteilt</td></tr>
+<tr><td>Unsichtbarkeit</td><td>Mittel</td><td>3</td><td>Mittel · Einzelziel · Minuten · Reichweite: 0–1 m</td><td>15</td><td>4</td><td>Ziel unsichtbar bis Angriff/Zauber</td><td>Position wird sofort aufgedeckt</td></tr>
+<tr><td>Blendlicht</td><td>Leicht</td><td>2</td><td>Leicht · Einzelziel · Sofort · Reichweite: 16–30 m</td><td>13</td><td>4</td><td>Blendung: 1 Runde 2x Nachteil</td><td>Trifft ein Teammitglied</td></tr>
+<tr><td>Illusionswand</td><td>Schwer</td><td>4</td><td>Schwer · Fläche · Minuten · Reichweite: 16–30 m</td><td>22</td><td>6</td><td>Große, glaubhafte Illusion über 10 Runden (Weisheit-Probe Ziel 10)</td><td>Keine</td></tr>
+<tr><td>Gedankenfessel</td><td>Mittel</td><td>3</td><td>Mittel · Einzelziel · Minuten · Reichweite: 31–50 m</td><td>19</td><td>5</td><td>Kontroll-/Beherrschungsversuch; Ziel Gegenprobe 15 Weisheit</td><td>Bei Fehlschlag: Angriffe treffen zufällige Personen 1 Runde</td></tr>
+<tr><td>Schlaf</td><td>Mittel</td><td>3</td><td>Mittel · Kleine Gruppe · Sofort · Reichweite: 16–30 m</td><td>17</td><td>5</td><td>Versetzt Gegner bis 50 LP in Schlaf für 4 Runden</td><td>Gefährlich bei Gegnern mit hohem Schaden</td></tr>
+<tr><td>Blindheit</td><td>Leicht</td><td>1</td><td>Leicht · Einzelziel · Minuten · Reichweite: 16–30 m</td><td>11</td><td>3</td><td>Blindheit: −5 AW & Nachteil 5 Runden</td><td>Zauberer erblindet</td></tr>
+<tr><td>Beschwörung Wolf</td><td>Mittel</td><td>3</td><td>Mittel · Einzelziel · Minuten · Reichweite: 0–1 m</td><td>15</td><td>4</td><td>Beschwört 1 Wolf (Verbündeter für 10 Runden, 1 Angriff pro Runde MOD:5 LP: Spieler LP/2 Schaden 1W12)</td><td>Beschworene Kreatur kann entgleiten</td></tr>
+<tr><td>Beschwörung Elementar</td><td>Schwer</td><td>4</td><td>Schwer · Einzelziel · Minuten · Reichweite: 0–1 m</td><td>18</td><td>5</td><td>Beschwört kleines Elementar (Feuer 1*3W6 / Eis 1*2W8 -5M BR / Blitz 2*1W8 eine Runde Stunn) für Kampf</td><td>Elementar kann Gruppe angreifen</td></tr>
+<tr><td>Teleport</td><td>Schwer</td><td>4</td><td>Schwer · Einzelziel · Sofort · Reichweite: 31–50 m</td><td>18</td><td>5</td><td>Teleportiert Ziel/Gruppe bis zur Reichweite</td><td>-5W8 LP für alle teleportierenden</td></tr>
+<tr><td>Kurzdistanz-Teleport</td><td>Mittel</td><td>3</td><td>Mittel · Einzelziel · Sofort · Reichweite: 6–15 m</td><td>15</td><td>4</td><td>Teleport kurz (taktische Positionierung)</td><td>Teleportiert direkt neben Gegner</td></tr>
+<tr><td>Zeitverzerrer</td><td>Episch</td><td>6</td><td>Episch · Kleine Gruppe · Minuten · Reichweite: 6–15 m</td><td>22</td><td>6</td><td>überspringt Aktionen von bis zu 4 Gegnern</td><td>überspringt Aktionen von 4 Teammitgliedern</td></tr>
+<tr><td>Fluch der Schwäche</td><td>Leicht</td><td>1</td><td>Leicht · Einzelziel · Minuten · Reichweite: 16–30 m</td><td>11</td><td>3</td><td>Senkt Schaden und Stärke des Ziels temporär um 3</td><td>Schwächt zufälliges Gruppenmitglied</td></tr>
+<tr><td>Seelenentzug</td><td>Schwer</td><td>4</td><td>Schwer · Einzelziel · Sofort · Reichweite: 31–50 m</td><td>22</td><td>6</td><td>Entzieht 1W10 LP & wandelt in gleich viele AP um</td><td>Macht Caster Schaden & gibt Monster AP</td></tr>
+<tr><td>Bannfeuer</td><td>Mittel</td><td>3</td><td>Mittel · Kleine Gruppe · Sofort · Reichweite: 16–30 m</td><td>15</td><td>4</td><td>Reinigt Debuffs/Buffs im Zielbereich</td><td>Heilige/Unheilige Nebenwirkung</td></tr>
+<tr><td>Manaquelle</td><td>Mittel</td><td>3</td><td>Mittel · Einzelziel · Stunden · Reichweite: 0–1 m</td><td>15</td><td>4</td><td>Erzeugt temporäre AP/Mana für eine Person (+2AP pro Runde für 3 Runden)</td><td>Bei Überladung: Rückstoß</td></tr>
+<tr><td>Weltenbrand</td><td>Legendär</td><td>9</td><td>Legendär · Riesige Fläche · Sofort · Reichweite: 31–50 m</td><td>14(note)</td><td>20</td><td>10W20 Flächenschaden + permanenter 10W6 Feuerschaden</td><td>zündet direkt beim Caster</td></tr>
+<tr><td>Arkaner Pfeilregen</td><td>Mittel</td><td>3</td><td>Mittel · Fläche · Sofort · Reichweite: 16–30 m</td><td>17</td><td>5</td><td>6 arkan-Pfeile (je 1W6 Schaden, verteilt auf Ziele im 10 m-Radius)</td><td>2W4 Rückstoßschaden an Caster</td></tr>
+<tr><td>Magnetischer Impuls</td><td>Leicht</td><td>1</td><td>Leicht · Einzelziel · Sofort · Reichweite: 6–15 m</td><td>11</td><td>3</td><td>Zieht Ziel/Metallwaffe 5 m, 1W8 Schaden bei Aufprall</td><td>Magnetisiert eigene Waffen (−2 AW für 2 Runden)</td></tr>
+<tr><td>Gravitationsstoß</td><td>Schwer</td><td>4</td><td>Schwer · Fläche · Sofort · Reichweite: 16–30 m</td><td>22</td><td>6</td><td>Alle Gegner im 8 m-Radius zu Boden, 2W10 Fallschaden, liegen 1 Runde</td><td>Bewegungsrate Caster −5 m für 2 Runden</td></tr>
+<tr><td>Gravitationsbrunnen</td><td>Episch</td><td>6</td><td>Episch · Fläche · Minuten · Reichweite: 31–50 m</td><td>30</td><td>8</td><td>Zone 10 m für 6 Runden: −10 m Bewegung, 1W8 Schaden pro Runde</td><td>Zieht auch Verbündete in Zone</td></tr>
+<tr><td>Schwarzer Splitter</td><td>Leicht</td><td>2</td><td>Leicht · Einzelziel · Sofort · Reichweite: 16–30 m</td><td>13</td><td>4</td><td>Schattenspeer: 2W8 Nekroschaden + 1W4 verzögerter Schaden</td><td>1W6 Selbstschaden für Caster</td></tr>
+<tr><td>Schattenfesseln</td><td>Mittel</td><td>3</td><td>Mittel · Kleine Gruppe · Minuten · Reichweite: 16–30 m</td><td>17</td><td>5</td><td>Hält bis zu 3 Ziele fest, Gegenprobe Stärke 15</td><td>Caster verliert 1 AP pro Runde</td></tr>
+<tr><td>Schattenmantel</td><td>Leicht</td><td>1</td><td>Leicht · Einzelziel · Minuten · Reichweite: 0–1 m</td><td>11</td><td>3</td><td>+5 auf Schleichproben, −2 AW</td><td>Leichte Kälteresistenz −2 Runden nach Ende</td></tr>
+<tr><td>Arkaner Schildstachel</td><td>Mittel</td><td>3</td><td>Mittel · Einzelziel · Minuten · Reichweite: 0–1 m</td><td>15</td><td>4</td><td>Schild, reflektiert 1W6 Schaden an Nahkampfangreifer (10 Runden)</td><td>−1W4 AP pro Parier-Trigger</td></tr>
+<tr><td>Arkane Geschosse</td><td>Leicht</td><td>2</td><td>Leicht · Einzelziel · Sofort · Reichweite: 16–30 m</td><td>11</td><td>3</td><td>Feuert 3 magische Geschosse (je 2W4+1)</td><td>Bei Fehlschlag streuen 1W4 Schaden an Verbündeten</td></tr>
+<tr><td>Manabrand</td><td>Schwer</td><td>4</td><td>Schwer · Einzelziel · Sofort · Reichweite: 16–30 m</td><td>22</td><td>6</td><td>2W10 Feuerschaden + AP-Vorrat Ziel −1W6</td><td>Caster verliert 1W4 AP</td></tr>
+<tr><td>Manasturm</td><td>Episch</td><td>6</td><td>Episch · Fläche · Sofort · Reichweite: 31–50 m</td><td>30</td><td>8</td><td>Alle Gegner im 12 m-Radius verlieren 2W6 AP + 2W8 Energieschaden</td><td>Reduziert AP-Pool des Caster um 5 bis Kampfende</td></tr>
+<tr><td>Zauberbrecher</td><td>Mittel</td><td>3</td><td>Mittel · Einzelziel · Sofort · Reichweite: 16–30 m</td><td>17</td><td>5</td><td>Bricht aktiven Buff / Schutzzauber Ziel</td><td>Bei Resistenz Rückstoß: −1W6 LP</td></tr>
+<tr><td>Arkaner Käfig</td><td>Schwer</td><td>4</td><td>Schwer · Fläche · Minuten · Reichweite: 6–15 m</td><td>20</td><td>5</td><td>Errichtet Käfig um 1–2 Ziele (10 Runden, Wände 50 LP)</td><td>Verbraucht 1W4 AP pro Runde Caster</td></tr>
+<tr><td>Runenmine</td><td>Leicht</td><td>1</td><td>Leicht · Fläche · Stunden · Reichweite: 0–1 m</td><td>11</td><td>3</td><td>Magische Falle: 2W8 Schaden im 3 m-Radius</td><td>Fehlzündung <10: 1W4 Eigenschaden</td></tr>
+<tr><td>Kettenexplosion</td><td>Schwer</td><td>4</td><td>Schwer · Fläche · Sofort · Reichweite: 16–30 m</td><td>22</td><td>6</td><td>Serie von 3 Explosionen (je 2W6 Schaden, 5 m Radius)</td><td>2W6 Brandschaden Caster bei Fehlprobe</td></tr>
+<tr><td>Schallwelle</td><td>Leicht</td><td>2</td><td>Leicht · Fläche · Sofort · Reichweite: 6–15 m</td><td>11</td><td>3</td><td>Gegner im 6 m-Kegel: 1W8 Schaden, 2 m zurückgestoßen</td><td>1 Runde Gehörverlust beim Caster</td></tr>
+<tr><td>Resonanzschlag</td><td>Mittel</td><td>3</td><td>Mittel · Einzelziel · Sofort · Reichweite: 16–30 m</td><td>17</td><td>5</td><td>1W12 Schallschaden + Ziel kann 1 Runde nicht zaubern</td><td>−2 AP beim Caster</td></tr>
+<tr><td>Schattendolch</td><td>Leicht</td><td>1</td><td>Leicht · Einzelziel · Sofort · Reichweite: 6–15 m</td><td>11</td><td>3</td><td>Beschwört Dolch aus Schatten: 1W8 Schaden, ignoriert 1 Rüstung</td><td>Bleibt 3 Runden stecken: −1W4 Bewegung für Ziel</td></tr>
+<tr><td>Illusionsdoppelgänger</td><td>Mittel</td><td>3</td><td>Mittel · Einzelziel · Minuten · Reichweite: 0–1 m</td><td>15</td><td>4</td><td>Spiegelbild für 5 Runden: Gegner würfeln Nachteil gegen Caster</td><td>Bei Treffer Doppelgänger: Caster −1W4 LP</td></tr>
+<tr><td>Runenverstärkung</td><td>Schwer</td><td>4</td><td>Schwer · Einzelziel · Minuten · Reichweite: 0–1 m</td><td>20</td><td>5</td><td>Verstärkt Rüstung oder Waffe +2W4 Schaden/LP für 10 Runden</td><td>Rückstoß: −1W4 LP</td></tr>
+<tr><td>Zeitfalle</td><td>Episch</td><td>6</td><td>Episch · Fläche · Minuten · Reichweite: 31–50 m</td><td>30</td><td>8</td><td>Gefangene Gegner: Aktionen überspringen 2 Runden</td><td>Gefangene Verbündete auch betroffen</td></tr>
+<tr><td>Arkaner Speerhagel</td><td>Schwer</td><td>4</td><td>Schwer · Fläche · Sofort · Reichweite: 31–50 m</td><td>22</td><td>6</td><td>Regnet 5 Speere aus Energie herab, je 1W8 Schaden auf zufällige Gegner im Radius</td><td>−3 AP pro Runde für 2 Runden nach Einsatz</td></tr>
+<tr><td>Kristallpfeil</td><td>Leicht</td><td>1</td><td>Leicht · Einzelziel · Sofort · Reichweite: 16–30 m</td><td>11</td><td>3</td><td>1W8 Durchschlagschaden, +2 gegen Gepanzerte</td><td>Bei Bruch Splitterverletzung: 1W4 LP an Caster</td></tr>
+<tr><td>Kristallwelle</td><td>Mittel</td><td>2</td><td>Mittel · Fläche · Sofort · Reichweite: 6–15 m</td><td>17</td><td>5</td><td>Kristallstacheln aus dem Boden: 2W8 Schaden + −5 m Bewegung für 2 Runden</td><td>Chance 25 %: auch Verbündete betroffen</td></tr>
+<tr><td>Runenschlag</td><td>Leicht</td><td>1</td><td>Leicht · Einzelziel · Sofort · Reichweite: 6–15 m</td><td>11</td><td>3</td><td>Runenblitz: 1W6 Schaden, verleiht Ziel Nachteil auf Magieproben nächste Runde</td><td>1W4 AP Verlust beim Caster</td></tr>
+<tr><td>Dimensionsriss</td><td>Episch</td><td>6</td><td>Episch · Fläche · Minuten · Reichweite: 31–50 m</td><td>28</td><td>7</td><td>Öffnet instabile Zone 5 Meter Radius: 3 Runden lang 2W10 Chaosschaden pro Runde, alle Proben Nachteil</td><td>Nach 3 Runden zieht Caster 1W10 Schaden ein</td></tr>
+<tr><td>Spiegelraum</td><td>Schwer</td><td>3</td><td>Schwer · Einzelziel · Minuten · Reichweite: 16–30 m</td><td>20</td><td>5</td><td>Bannt 1 Ziel für 5 Runden in Spiegel-Dimension (keine Aktion möglich)</td><td>−2W6 AP beim Caster nach Ende</td></tr>
+<tr><td>Stasisfeld</td><td>Episch</td><td>6</td><td>Episch · Fläche · Minuten · Reichweite: 16–30 m</td><td>30</td><td>8</td><td>Friert Zeit im 8 m-Radius für 2 Runden ein (nur Caster + Verbündete handeln)</td><td>Großer Erschöpfungsschaden: 2W8 LP an Caster</td></tr>
+<tr><td>Glyphe des Zorns</td><td>Mittel</td><td>2</td><td>Mittel · Fläche · Stunden · Reichweite: 0–1 m</td><td>17</td><td>5</td><td>Platziert Rune: bei Auslösung Explosion 3W6 Feuer + 1W6 Schock in einem 3 Meter Radius</td><td>Fehlzündung bei Auslösung 20 %: halber Schaden an Caster</td></tr>
+<tr><td>Glyphe des Siechens</td><td>Schwer</td><td>3</td><td>Schwer · Fläche · Stunden · Reichweite: 0–1 m</td><td>22</td><td>6</td><td>Fluchrune: Gegner im 5 m Radius erleiden 1W6 Schaden + −2 Stärke für 5 Runden</td><td>Selbst −1W4 Stärke für 2 Runden</td></tr>
+<tr><td>Runenverderbnis</td><td>Legendär</td><td>7</td><td>Legendär · Fläche · Sofort · Reichweite: 31–50 m</td><td>12(note)</td><td>18</td><td>Rune explodiert chaotisch: 5W20 Schaden + zufälliger Debuff für alle (auch Verbündete) in einem 10 Meter Radius</td><td>50 % Chance auf Selbsttreffer</td></tr>
+
+<tr><td>Feuersturm</td><td>Schwer</td><td>5</td><td>Schwer · Fläche · Sofort · Reichweite: 31–50 m</td><td>24</td><td>7</td><td>Entfacht einen Feuerorkan: 4W10 Schaden + 1W6 Brandschaden pro Runde für 3 Runden im 10 m-Radius</td><td>−3 AP pro Runde für 2 Runden nach Einsatz orkan starte auf dem zauber Caster</td></tr>
+<tr><td>Eisspeer-Salve</td><td>Schwer</td><td>5</td><td>Schwer · Fläche · Sofort · Reichweite: 16–30 m</td><td>23</td><td>6</td><td>Wirft 6 Eisspeere, je 1W8 Schaden + −3 m Bewegung bei Treffer</td><td>Gefahr von Eigenschaden: 1W6 Kälteschaden an Caster</td></tr>
+<tr><td>Seelenbann</td><td>Schwer</td><td>5</td><td>Schwer · Einzelziel · Minuten · Reichweite: 16–30 m</td><td>25</td><td>7</td><td>Fesselt Seele eines Gegners: 3 Runden lang keine magischen Handlungen möglich, 2W8 Schaden beim Bannbruch</td><td>Caster kan die nächte runde keine zauber Wirken</td></tr>
+<tr><td>Kettenverderbnis</td><td>Schwer</td><td>5</td><td>Schwer · Kleine Gruppe · Sofort · Reichweite: 31–50 m</td><td>24</td><td>7</td><td>Verseucht bis zu 3 Ziele mit Dunkelmagie: 2W8 Schaden + −2 Stärke für 2 Runden</td><td>1x verderbnis trift einen team ein glied der rest verfehlt alle</td></tr>
+<tr><td>Ätherklingen</td><td>Schwer</td><td>5</td><td>Schwer · Fläche · Sofort · Reichweite: 6–15 m</td><td>23</td><td>6</td><td>Beschwört 5 Klingen aus Energie, die alle Gegner im 6 m-Radius angreifen: je 1W8 Schaden</td><td>2 klingen treffen den Caster rest verfehlt</td></tr>
+<tr><td>Seelenspalter</td><td>Legendär</td><td>7</td><td>Legendär · Einzelziel · Sofort · Reichweite: 16–30 m</td><td>6(note)</td><td>18</td><td>Zerreißt die Seele des Ziels: 4W20 Schaden + Ziel kann 20 Runde nicht geheilt werden</td><td>Caster verliert 1W8 LP</td></tr>
+<tr><td>Feuerregen</td><td>Legendär</td><td>7</td><td>Legendär · Fläche · Minuten · Reichweite: 31–50 m</td><td>12(note)</td><td>18</td><td>Regnet Flammen für 4 Runden: 2W20 Feuerschaden pro Runde im 12 m-Radius</td><td>explosion bei dem caster for 10W20 schaden</td></tr>
+<tr><td>Arkane Nova</td><td>Legendär</td><td>7</td><td>Legendär · Fläche · Sofort · Reichweite: 6–15 m</td><td>8(note)</td><td>18</td><td>Entlädt konzentrierte Magie: 10W8 Schaden + stößt Gegner 15 m zurück</td><td>−3W8 AP beim Caster</td></tr>
+<tr><td>Sternenfall</td><td>Episch</td><td>8</td><td>Episch · Fläche · Sofort · Reichweite: 31–50 m</td><td>32</td><td>10</td><td>Ruft Sternschnuppen herab: 8 Einschläge mit je 2W12 Schaden auf ausgewählte Gegner im 15 m-Radius</td><td>eine stern schnuppe trifft jedes Patie mitglied</td></tr>
+<tr><td>Seelensturm</td><td>Episch</td><td>8</td><td>Episch · Fläche · Minuten · Reichweite: 16–30 m</td><td>33</td><td>10</td><td>Wirbelt verlorene Seelen auf: 3W12 Schaden pro Runde im 10 m-Radius für 5 Runden</td><td>−1W6 AP an Caster pro Runde bis ende Kampf</td></tr>
+<tr><td>Weltenriss</td><td>Legendär</td><td>9</td><td>Legendär · Riesige Fläche · Sofort · Reichweite: 51+ m</td><td>16(note)</td><td>25</td><td>Spaltet die Realität: 8W20 Chaosschaden im 20 m-Radius, 25 % Chance Gegner für 10 Runden Vom Kampf zuentfernen </td><td>Verursacht 2W20 LP Schaden an Caster</td></tr>
+<tr><td>Göttlicher Komet</td><td>Mythisch</td><td>10</td><td>Mythisch · Riesige Fläche · Sofort · Reichweite: 51+ m</td><td>25(note 1)</td><td>30</td><td>Beschwört einen Kometen: 12W20 Flächenschaden im 25 m-Radius über 3 Runden</td><td>Caster sinkt auf -20 LP</td></tr>	
+</tbody>
+</table>
+<p class="note">note(Legendärezauber):Multyproben-Zielwert-Berechnung = Wirkungsbereich + Dauer + Reichweite (natürliche 20 + Multiproben ).</p>
+</div>
+
+<script src="header.js"></script>
+</body>

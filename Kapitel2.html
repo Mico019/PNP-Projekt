@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>PNP Projekt</title>
+  <meta name="description" content="Kurze Beschreibung der Webseite">
+  <meta name="author" content="Dein Name">
+  <link rel="stylesheet" href="stylekapitel2.css">
+<link rel="stylesheet" href="header.css">
+  <script src="header.js" defer></script>
+</head>
+<body>
+
+  <header id="menu"></header>
+	
+<div class="content">
+<h1 id="kap2">Kapitel 2 – Klassen</h1>
+
+<p>Die Effekte von Klassenstufen sind kumulativ.</p>
+<table border="1"cellspacing="0">
+  <thead>
+    <tr>
+      <th>Stufe</th>
+      <th>Dieb</th>
+      <th>Nahkämpfer</th>
+      <th>Magier</th>
+      <th>Barde</th>
+      <th>Kleriker</th>
+      <th>Jäger</th>
+      <th>Alchemist</th>
+      <th>Barbar</th>
+      <th>Fernkämpfer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LP-Bonus</td>
+      <td>+2 LP</td>
+      <td>+4 LP</td>
+      <td>+2 LP</td>
+      <td>+2 LP</td>
+      <td>+3 LP</td>
+      <td>+3 LP</td>
+      <td>+2 LP</td>
+      <td>+4 LP</td>
+      <td>+3 LP</td>
+    </tr>
+    <tr>
+      <td>Stufe 0</td>
+      <td>Leichte Nahkampfwaffenfertigkeit, Diebeshandlungen</td>
+      <td>Mitteschwere Nahkampfwaffenfertigkeit, schwere Nahkampfwaffenfertigkeit</td>
+      <td>Kann Magie nutzen</td>
+      <td>Kann Barden Magie nutzen</td>
+      <td>Kann Heilige Magie nutzen</td>
+      <td>Spuren lesen, Fernkampfwaffenfertigkeit </td>
+      <td>Tränke und Gifte herstellen</td>
+      <td>Mitteschwere Nahkampfwaffenfertigkeit, schwere Nahkampfwaffenfertigkeit</td>
+      <td>Fernkampfwaffenfertigkeit</td>
+    </tr>
+    <tr>
+      <td>Stufe 1</td>
+      <td>+1W6 Schleichen</td>
+      <td>+1W6 Treffer mit Mitteschwere Nahkampfwaffen</td>
+      <td>+1W6 Zauberproben</td>
+      <td>+1W6 Charme/Verführung</td>
+      <td>+1W6 Heilige Zauber</td>
+      <td>+1W6 Treffer mit Fernkampfwaffen</td>
+      <td>+1W6 Trankherstellung</td>
+      <td>+1W6 Treffer mit schweren Nahkampfwaffen</td>
+      <td>+1W6 Treffer mit Fernkampfwaffen</td>
+    </tr>
+    <tr>
+      <td>Stufe 2</td>
+      <td>Hinterhalt und Schleichen -1 AP</td>
+      <td>Mitteschwere Nahkampfwaffen -1 AP</td>
+      <td>Zauber -1 AP</td>
+      <td>+1W6 Charme/Verführung</td>
+      <td>Heilige Zauber -1 AP</td>
+      <td>Fernkampfwaffen -1 AP</td>
+      <td>+1W6 Trankherstellung</td>
+      <td>Schwere Nahkampfwaffen -1 AP</td>
+      <td>Fernkampfwaffen -1 AP</td>
+    </tr>
+    <tr>
+      <td>Stufe 3</td>
+      <td>Grundgeschick I: GeschickMOD / 4</td>
+      <td>Grundstärke I: KraftMOD / 4</td>
+      <td>Grundweisheit I: WeisheitMOD / 4</td>
+      <td>Grundcharme I: CharmeMOD / 4</td>
+      <td>Grundweisheit I: WeisheitMOD / 4</td>
+      <td>Grundcharme I: CharmeMOD / 4</td>
+      <td>Grundweisheitv: WeisheitMOD / 4</td>
+      <td>Grundstärke I: KraftMOD / 4</td>
+      <td>Grundgeschick I: GeschickMOD / 4</td>
+    </tr>
+    <tr>
+      <td>Stufe 4</td>
+  	  <td>+1W6 auf Heimlichkeit und Schlösser knacken</td>
+  	  <td>+1W8 auf Nahkampfangriffe</td>
+      <td>-1 Zauberwirkdauer</td>
+      <td>-1 Zauberwirkdauer</td>
+      <td>-1 Zauberwirkdauer</td>
+      <td>+1W6 auf Spurenlesen und Wahrnehmung</td>
+	  <td>Grundgeschick I: GeschickMOD / 4</td>
+      <td>+1W8 auf Stärkewürfe (z. B. Türen aufbrechen, schwere Objekte heben)</td>
+  	  <td>+1W8 auf Fernkampfangriffe</td>
+      
+    </tr>
+    <tr>
+      <td>Stufe 5</td>
+      <td>Grundausdauer I: AusdauerMOD / 4</td>
+      <td>Grundausdauer I: AusdauerMOD / 4</td>
+      <td>Grundausdauer I: AusdauerMOD / 4</td>
+      <td>Grundausdauer I: AusdauerMOD / 4</td>
+      <td>Grundausdauer I: AusdauerMOD / 4</td>
+      <td>Grundausdauer I: AusdauerMOD / 4</td>
+      <td>Grundwahrnehmung I: WahrnehmungMOD / 4</td>
+      <td>Grundausdauer I: AusdauerMOD / 4</td>
+      <td>Grundausdauer I: AusdauerMOD / 4</td>
+    </tr>
+    <tr>
+  <td>Stufe 6</td>
+  <td>+1W6 auf Verstecken und Weglaufen / Entkommen</td>
+  <td>+1W8 auf Blocken / Parieren oder Gegenangriff + +1 schildfertigkeit</td>
+  <td>+1W6 auf Zauberprobe (Sicherheitswurf)</td>
+  <td>+1W6 auf Überreden / Charme oder Inspiration</td>
+  <td>+1W6 auf Heilproben oder Gotteszauber</td>
+  <td>+1W6 auf Fährten / Spurenlesen und Tierverhalten</td>
+  <td>+1W6 auf Gifte / Tränke herstellen und Alchemie-Proben</td>
+  <td>+1W8 auf Wut-/Berserk-Proben (mehr Schaden, mehr Ausdauerverbrauch)</td>
+  <td>+1W8 auf Fernkampfangriffe und Zielstabilität</td>
+</tr>
+<tr>
+  <td>7</td>
+  <td>+1W8 auf Täuschen und Tricksen (z. B. Ablenkungen oder Finten)</td>
+  <td>+1W8 auf Wuchtangriffe (volle Kraft)</td>
+  <td>+1W6 auf Zauber mit Elementfokus (Feuer, Eis, Blitz usw.)</td>
+  <td>+1W6 auf Motivations- oder Unterstützungsproben (Musik, Reden, Lieder)</td>
+  <td>+1W6 auf Schutzzauber oder Vertreiben von Untoten</td>
+  <td>+1W8 auf Fernzielschüsse (weite Distanzen oder bewegte Ziele)</td>
+  <td>+1W6 auf Explosivtränke / Kampftränke</td>
+  <td>+1W8 auf Widerstandsproben (gegen Schmerz, Furcht oder Magie)</td>
+  <td>+1W8 auf Schnellfeuer-Angriffe oder Zielwechsel</td>
+</tr>
+    <tr>
+      <td>Stufe 8</td>
+      <td>+I LVL Grundgeschick</td>
+      <td>+I LVL Grundstärke</td>
+      <td>+I LVL Grundweisheit</td>
+      <td>+I LVL Grundcharme</td>
+      <td>+I LVL Grundweisheit</td>
+      <td>+I LVL Grundcharme</td>
+      <td>+I LVL Grundweisheit</td>
+      <td>+I LVL Grundstärke</td>
+      <td>+I LVL Grundgeschick</td>
+    </tr>
+    <tr>
+      <td>Stufe 9</td>
+      <td>+1W8 auf Täuschen und Tricksen (z. B. Ablenkungen oder Finten)</td>
+  	  <td>+1W8 schaden auf schnitt angriffe</td>
+	  <td>-1 Zauberwirkdauer</td>
+      <td>-1 Zauberwirkdauer</td>
+      <td>-1 Zauberwirkdauer</td>
+      <td>+1W8 auf Kritische Treffer bei Fernkampf</td>
+	  <td>+1W8 auf Komplexe Brau- oder Kombiproben (mehrere Zutaten)</td>
+  	  <td>+1W8 schaden auf Wucht angriffe</td>
+	  <td>+1W10 auf kritische Fernkampftreffer</td>
+    </tr>
+<tr>
+  <td>10</td>
+  <td>Meisterdieb: Einmal pro Tag darf eine verpatzte Heimlichkeits- oder Diebesprobe wiederholt werden</td>
+  <td>Klingenmeister: Einmal pro Kampf darf ein verfehlter Nahkampfangriff wiederholt werden</td>
+  <td>Erzmagier: Einmal täglich kostenloser Zauber bis Stufe 2</td>
+  <td>Meister der Worte: Verbündete im Umkreis erhalten +1W6 auf ihre nächste soziale Probe</td>
+  <td>Gesegneter: Einmal pro Tag automatischer Erfolg bei einer Heilung</td>
+  <td>Tiergefährte-Bindung: Einmal täglich kann der Tiergefährte doppelt handeln</td>
+  <td>Großalchemist: Kann Tränke it zwei effeckten brauen</td>
+  <td>Uralte Wut: Erste Rage pro Tag kostet keine Ausdauer</td>
+  <td>Präzisionsmeister: Einmal pro Tag automatischer Treffer, wenn Angriff mit Vorteil geworfen wurde</td>
+</tr>
+
+    <tr>
+      <th>Fähigkeit</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr>
+      <td>Fähigkeit 1</td>
+      <td>Jeder Angriff aus dem Hinterhalt trifft</td>
+      <td>Agressiver Schlag (doppelter Schaden, 2×AP-1, CD 2 Runden)</td>
+      <td>Leichter Zaubern (halber Zielwert, doppelte AP, CD 2)</td>
+      <td>Inspirierende Musik (+2W4 für einen Spieler)</td>
+      <td>Leichter Zaubern (halber Zielwert, doppelte AP, CD 2)</td>
+      <td>Kann 1 Monster/Tier (10 LVL unter Spieler) zähmen</td>
+      <td>einmal pro tag hat der alchemiest die möglichkeit einen trank zuretten</td>
+      <td>Agressiver Schlag (doppelter Schaden, 2×AP-1, CD 2)</td>
+      <td>Starker Schuss (doppelter Schaden, 2×AP-1, CD 2)</td>
+    </tr>
+    <tr>
+      <td>Fähigkeit 2</td>
+      <td>Nach erfolgreicher Aktion neue Versteckprobe</td>
+      <td></td>
+      <td>Verzaubern von Gegenständen oder 100% leichte/mittlere Zauber</td>
+      <td>100% Chance leichte/mittlere Zauber</td>
+      <td>100% Chance leichte/mittlere heilige Zauber</td>
+      <td>Kann ab jetzt Beschwörungs magie nutzen</td>
+      <td>Kann 2 tränke auf einmal herstellen</td>
+      <td>Wut Halbiert alle AP kosten für 5 Runden nur einmal pro kampf möglich</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Fähigkeit 3</td>
+      <td>50% Hinterhalt-Treffer kritisch (W20 und 10)</td>
+      <td></td>
+      <td>Verzaubern von Gegenständen oder 100% Chance auf leichte/mittlere/schwere Zauber</td>
+      <td>100% Chance auf leichte/mittlere/schwere Zauber</td>
+      <td>100% Chance auf leichte/mittlere/schwere heilige Zauber</td>
+      <td></td>
+      <td>Der Alche mist kann die trank herstellungs proben eines tranke einmal immer neu würfeln wen sie bestanden sind und das ergebnis mit der höheren trank qualität nehmen</td>
+      <td>Wärend wut acktive ist hat agresiver schlag keinen cooldown</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Fähigkeit 4</td>
+      <td>Jeder Hinterhalt-Treffer kritisch</td>
+      <td></td>
+      <td>Verzaubern oder Legendär-Zauber (15 auf W20, 1× pro Tag)</td>
+      <td></td>
+      <td>Legendär-Zauber (15 auf W20, 1× pro Tag)</td>
+      <td>Alles und jeden zähmen</td>
+      <td>ein mal pro tag kann der alchemiste einen trank auf legendäre qualität von jeder qualitt hoch steigen lassen</td>
+      <td>Berserker: +100 temporäre AP für 1 Zug (CD bis AP voll)</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h2>Weitere inforationen</h2>
+	<ul>
+	<li>Der SC schaltet alle 10 LVL eine neue Klassen-stufe frei
+		<ul>
+		<li>Bei den Klassen-stufen 3,5,8,10 kriegt Der SC zugriff auf die 		dazugehörige fähigekeit</li>
+		</ul>
+	</li>
+	<li><h3>Multiklassen:</h3>
+		<ul>
+		<li>Ab LVL 30 erhälltlich</li>
+		<li>Wenn mann eine Multyklasse wählt muss man 3 klassen-stufen in diese investiren</li>
+		<li1><strong>!WICHTIG! Wenn du dich entscheidest eine Multiklasse zu wählen, dann bedenke, dass dir die Fähigkeiten auf Klassen stufe 8 und 10 verwehrt bleiben!</strong></li1>		
+		</ul>
+	</li>
+	</ul>
+</div>
+
+<script src="header.js"></script>
+</body>

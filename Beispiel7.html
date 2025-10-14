@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>PNP Projekt</title>
+  <meta name="description" content="Kurze Beschreibung der Webseite">
+  <meta name="author" content="Dein Name">
+  <link rel="stylesheet" href="stylekapitel7.css">
+ <link rel="stylesheet" href="header.css">
+  <script src="header.js" defer></script>
+</head>
+<body>
+
+  <header id="menu"></header>
+	
+<div class="content">
+  <h2>Beispielrechnungen Zauber</h2>
+
+<h3>1. Normaler Zauber – Erstellung und Up/Downcast</h3>
+<p><strong>Schritt 1: Zauber erstellen</strong></p>
+<ul>
+  <li>Zaubername: Feuerpfeil</li>
+  <li>Effektstufe: Leicht → Basis-Zielwert = 8</li>
+  <li>Wirkungsbereich: Einzelziel → Modifikator = 0</li>
+  <li>Dauer: sofort</li>
+  <li>Reichweite: 2–5 m → +2 Zielwert → Gesamt-Basis-Zielwert = 10</li>
+  <li>Basis-ZL = 1</li>
+  <li>Wirk-Dauer: 1 Aktion</li>
+</ul>
+
+<p><strong>Schritt 2: Hochcasten (Upcast)</strong></p>
+<ul>
+  <li>Gewähltes ZL = 3 → Δ = 3 − 1 = +2</li>
+  <li>Neuer Zielwert = Basis-Zielwert + 3 × Δ = 10 + 6 = 16</li>
+  <li>AP-Kosten = aufgerundet(Basis-Zielwert ÷ 4) + 2 × Δ² = 3 + 8 = 11 AP</li>
+  <li>Effekt-Faktor = 1,5^Δ = 1,5² = 2,25 → Schaden ×2,25</li>
+</ul>
+
+<p><strong>Schritt 3: Runtercasten (Downcast)</strong></p>
+<ul>
+  <li>Gewähltes ZL = 0 → Δ = 0 − 1 = −1</li>
+  <li>Neuer Zielwert = 10 + 3 × (−1) = 7</li>
+  <li>AP-Kosten = aufgerundet(10 ÷ 4) + 2 × (−1)² = 3 + 2 = 5 AP</li>
+  <li>Effekt-Faktor = 1,5^(−1) ≈ 0,66 → Schaden ×0,66</li>
+</ul>
+
+<p><strong>Schritt 4: Probe</strong></p>
+<ul>
+  <li>Attribut Wissen +2 → Wurf 1W20 + 2 = 15  Erfolg</li>
+  <li>Feuerpfeil wirkt mit entsprechendem Effektfaktor</li>
+</ul>
+
+<h3>2. Legendärer Zauber – „Göttlicher Blitz“</h3>
+<p>Legendäre Zauber haben eigene Regeln: natürliche 20 erforderlich, Multiprobe im Nachteil, AP ≥ 18</p>
+
+<p><strong>Schritt 1: Zauber erstellen</strong></p>
+<ul>
+  <li>Zaubername: Göttlicher Blitz</li>
+  <li>Effektstufe: Legendär → Basis-Zielwert = nicht normal berechenbar</li>
+  <li>Wirkungsbereich: Riesen Fläche → Modifikator = +6</li>
+  <li>Dauer: sofort → Modifikator = +0</li>
+  <li>Reichweite: 51 Meter → Modifikator = +10</li>
+  <li>Wirk-Dauer: 10 Minuten</li>
+  <li>AP-Kosten: mindestens 18</li>
+  <li>Ziel-Wert für die Multyproben = 16</li>
+</ul>
+
+<p><strong>Schritt 2: Multiprobe im Nachteil</strong></p>
+<ul>
+  <li>Teilproben: Weisheit (8), Weisheit(8), Weisheit(8) </li>
+  <li>Multiprobe-Modifikator = Summe ÷ 2 = (8+8+8)/2 = 12 → aufgerundet = 12</li>
+  <li>Jede Teilprobe = 2W20, schlechtesten Wurf + Multiprobe-Modifikator</li>
+</ul>
+
+<p><strong>Schritt 3: Probe</strong></p>
+<ul>
+  <li>Wissen: 2W20 → schlechterer Wurf 15 + 1 = 16 </li>
+  <li>Weisheit: 2W20 → schlechterer Wurf 12 + 4 = 16 </li>
+  <li>Charme: 2W20 → schlechterer Wurf 14 + 2 = 16 </li>
+  <li><strong>Hinweis</strong> in diesem fall hatte der spieler masive viel glück aber das heist nicht das er den zauber diereckt wirken kann den:</li>
+</ul>
+
+<p><strong>Ergebnis:</strong> Alle 3 Teilproben bestanden → Zauber wirkt erfolgreich. Natürliche 20 nötig für die Aktivierung.<br>
+W20 Probe = NAT 20 Zauber erfolgreich (Ist cirka eine 5% chance)</p>
+
+</div>
+
+<script src="header.js"></script>
+</body>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>PNP Projekt</title>
+  <meta name="description" content="Kurze Beschreibung der Webseite">
+  <meta name="author" content="Dein Name">
+  <link rel="stylesheet" href="stylekapitel8.css">
+<link rel="stylesheet" href="header.css">
+  <script src="header.js" defer></script>
+</head>
+<body>
+
+  <header id="menu"></header>
+	
+<div class="content">
+
+<h2>Kapitel 8 – Dynamisches Aktionspunktsystem (AP) & Ruhe</h2>
+
+<h3>1. AP-Berechnung</h3>
+<ul>
+  <li>Formel: AP = 4 + Ausdauer(Artributswert) + 2*Ausdauer Mod.</li>
+  <li>Keine Obergrenze – hohe Ausdauer bedeutet viele Aktionen.</li>
+  <li>Die Kosten einer Acktion steigen ab einschlieslich der 3ten AP kostenden Acktion mit dieser formel an: Basis AP Kosten + (Acktionen-2)^2.</li>
+  <li>AP-Kosten dürfen niemals unter 1 sinken.</li>
+</ul>
+
+<h3>2. Überlastung</h3>
+<ul>
+  <li>Wenn mehr AP ausgegeben werden, als verfügbar sind:
+    <ul>
+      <li>Ausdauerprobe ablegen (+1 Nachteil pro 4 AP im Minus).</li>
+      <li>Bei Erfolg: AP wird auf 0 gesetzt, keine Folgen.</li>
+      <li>Bei Fehlschlag: +1 Nachteils-Punkt auf alle Proben bis zur nächsten Ruhe.</li>
+      <li>Kritischer Fehlschlag (≤3 bei der Ausdauerprobe): 1 Runde handlungsunfähig oder Ausschluss von der nächsten Probe.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3>3. Ruhe</h3>
+<ul>
+  <li>10 Minuten Ruhe: +1 AP, +2 Leben.</li>
+  <li>Nur bis zu ¾ der Maximal-AP ereicht sind, danach braucht es eine lange Ruhe um den Rest der AP zu Regeneriren.</li>
+  <li>Lange Ruhe: mind. 6 Stunden (bei Unterbrechung bis zu 8h).</li>
+  <li>Werte können durch Effekte verändert werden.z.b. zauber die bonus heilung bei einer Ruhe geben</li>
+</ul>
+
+
+<h3>Aktionssystem (überarbeitet)</h3>
+
+<p>
+Jede Runde darf ein Charakter bis zu <b>2 Aktionen</b> ohne Mehrkosten durchführen. 
+Aktionen können <b>halbe (0,5)</b> oder <b>volle (1)</b> Aktionen sein. 
+Das erlaubt flexiblere und schnellere Spielzüge.
+</p>
+
+<ul>
+  <li><b>Bewegung:</b> 0,5 Aktion</li>
+  <li><b>Angriff:</b> 1 Aktion</li>
+  <li><b>Nachladen:</b> 0,5 Aktion</li>
+  <li><b>Zauber oder komplexe Handlung:</b> 1 Aktion</li>
+</ul>
+
+<p>
+Möchte ein Charakter <b>mehr als 2 Aktionen</b> in derselben Runde ausführen, 
+steigen die <b>AP-Kosten exponentiell</b> an:
+</p>
+
+<pre><code>Kostenmultiplikator = 2^(Gesamtaktionen dieser Runde - Acktions Limit)</code></pre>
+
+<p>
+Der Multiplikator gilt nur für die acktionen mit dem die in das feld des multy plikators kommen und wird am Ende jeder Runde wieder auf <b>1×</b> zurückgesetzt.
+</p>
+
+
+
+  </div>
+
+<script src="header.js"></script>
+</body>

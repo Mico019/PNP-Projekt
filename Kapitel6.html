@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>PNP Projekt</title>
+  <meta name="description" content="Kurze Beschreibung der Webseite">
+  <meta name="author" content="Dein Name">
+  <link rel="stylesheet" href="stylekapitel6.css">
+<link rel="stylesheet" href="header.css">
+  <script src="header.js" defer></script>
+</head>
+<body>
+
+  <header id="menu"></header>
+	
+<div class="content">
+<h1 id="kap6">Kapitel 6 – Kampfregeln</h1>
+
+<h2>1. Rundenablauf</h2>
+<ol>
+  <li><strong>Initiative:</strong> Alle würfeln 1W20 + <a href="Kapitel 1.html">Geschiklichkeits-MOD</a>. Höchste Zahl beginnt, dann absteigend.</li>
+  <li><strong>Aktion wählen:</strong> Bewegung, Angriff, Zauber, Spezialaktion.</li>
+  <li><a href="Kapitel 5.html"><strong>Trefferprobe:</strong></a> Passendes Attribut + Modifikatoren + Spezialwürfel gegen Zielwert. Zielwert-Berechnung kann z. B. aus <code>(Wahrnehmung + Geschicklichkeit)/2</code> erfolgen; Hinterhalte senken diesen Wert.</li>
+  <li><strong>Schaden berechnen:</strong> Grundschaden + Schadenswurf der Waffe.</li>
+  <li><strong>Kritische Treffer prüfen.</strong></li>
+  <li><strong>Schaden anwenden:</strong> Rüstungswert abziehen (nicht bei  kritischen Treffern).</li>
+  <li><strong><a href="Kapitel 8.html">AP</a> prüfen:</strong> Überlastungsprobe bei Überschreitung.</li>
+  <li>Eine Runde dauert 12 Sekunden Spielzeit.</li>
+</ol>
+
+
+<h2>2. Kritische Treffer</h2>
+<ul>
+  <li>Voraussetzung: neutrale Stellung (DM entscheidet ggf. Sonderfälle).</li>
+  <li>Alle krit boni legen eine Vorteilsstufe (0–12) fest.</li>
+  <li>Wurf: 2W6, Ziel = <code>12 − Vorteilsstufe</code>. Bei Erfolg wird der Gesamtschaden (Grund + Wurf) verdoppelt.</li>
+  <li>Ein einzelner Zauber kann nur kritisch treffen, wenn er Teil eines kombinierten Angriffs ist (z. B. verzauberte Waffe) denn zauber alleine können keine Kritischen Treffer treffen.</li>
+</ul>
+
+
+<h2>3. Zustände und Schadensarten</h2>
+<p>Gängige Schadensarten und typische Effekte:</p>
+<table border="1">
+  <thead>
+    <tr><th>Schadensart</th><th>Typischer Effekt / Quelle</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Stich</td><td>Spitze Waffen (Pfeile, Dolche)</td></tr>
+    <tr><td>Hieb/Schlitz</td><td>Schwerter/Äxte; evtl. Heilungsdauer an Wunden</td></tr>
+    <tr><td>Wucht</td><td>Ignoriert 2 Rüstung (z. B. Hämmer, Stürze)</td></tr>
+    <tr><td>Feuer</td><td>Initialer Schaden + anhaltend (z. B. Flammen), gelegentlich Brenn-Status</td></tr>
+    <tr><td>Kälte</td><td>Schaden + mögliche Betäubung bis Befreiung</td></tr>
+    <tr><td>Blitz</td><td>Schaden + Betäubung (Dauer variabel)</td></tr>
+    <tr><td>Donner</td><td>Betäubung 2 Runden</td></tr>
+    <tr><td>Gift</td><td>Malus auf Proben (andere Effekte möglich)</td></tr>
+  </tbody>
+</table>
+<p>Weitere Effeckte können von dem DM Deffiniert und angepasst werden</p>
+
+<h2>4. Gelände- und Taktikboni</h2>
+<ul>
+  <li>Gelände, Deckung und Taktiken bieten Modifikatoren auf Proben, Initiative oder Trefferwürfe (DM entscheidet die Werte).</li>
+  <li>Positionsvorteile (z. B. Hinterhalt) senken Zielwerte oder fügen Vorteile auf Angriffe hinzu.</li>
+</ul>
+<p>(Hinweis: Hinterhalte wurden in den Trefferprobe-Abschnitten als wichtig genannt).</p>
+
+<h2>5. Spezialaktionen</h2>
+<p>Beispiele für Spezialaktionen (Kurzbeschreibung):</p>
+<ul>
+  <li><strong>Umreißen:</strong> Statt Schaden eine Geschick-Probe; bei Erfolg Ziel am Boden (Ziel erhält −1W6 Verteidigung; 2 <a href="Kapitel 8.html">AP</a> zum Aufstehen).</li>
+  <li><strong>Halten/Greifen:</strong> Kraft-Probe; Erfolg = Ziel bewegungsunfähig bis Befreiung.</li>
+  <li>Spezialaktionen haben AP-Kosten; die Tabelle AP → maximaler Waffen-Schaden (Orientierung aus Regeln):</li>
+</ul>
+<table border="1">
+  <thead>
+    <tr><th><a href="Kapitel 8.html">AP-Kosten</a></th><th>Max. Waffen-Schaden (Orientierungswerte)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1 AP</td><td>4</td></tr>
+    <tr><td>2 AP</td><td>7</td></tr>
+    <tr><td>3 AP</td><td>10</td></tr>
+    <tr><td>4 AP</td><td>15</td></tr>
+    <tr><td>5 AP</td><td>20</td></tr>
+  </tbody>
+</table>
+<p>Diese Werte dienen als Balancerichtlinie, da Waffen-Typ-Zusatzschaden mit einbezogen wird (kein Minimum, nur Maximalwert).</p>
+
+<h2>6. Verletzungen un Tod</h2>
+<ol>
+  <li><strong>Schaden nehmen:</strong> Schaden wird von aktuellen Lebenspunkten abgezogen. DM kann zusätzliche Strafen bei kritischen Körperteilverletzungen verhängen.</li>
+  <li><strong>Leben auf 0:</strong> Fällt ein Charakter auf 0 Leben, muss er sofort <code>1W6 + Ausdauer-<a href="Kapitel 1.html">Modifikator</a></code> würfeln. Das Ergebnis gibt an, wie viele Runden Mitspieler Zeit haben, den Charakter zu stabilisieren/zu retten.</li>
+  <li><strong>Rettungsversuche:</strong>
+    <ul>
+      <li>Rettung erfordert eine <a href="Kapitel 5.html">Multiprobe</a> (Geschicklichkeit, Weisheit, Gesundheit).</li>
+      <li>Zielwert =Gesundheits Attribut + <a href="Kapitel 8.html">Klassen spezifische leben</a> * LVL/ 20</li>
+    </ul>
+  </li>
+  <li><strong>Selbstrettung:</strong> Spieler können sich selbst retten, müssen dabei aber eine <a href="Kapitel 5.html">Multiprobe</a> mit 1 Punkt <a href="Kapitel 5.html">Nachteil</a> (2W20, schlechtesten Wurf nehmen) bestehen; Zielwert wie oben.</li>
+  <li><strong>Erfolgreiche Rettung:</strong> Lebenskraft steigt sofort auf 1/4 der maximalen Lebenspunkte (außer spezifische Heilmethoden geben andere Werte).</li>
+</ol>
+<p>Details und exakte Proben (Attribute, Nachteil-Regel) sind im Regeltext beschrieben. </p>
+
+<h2>7.Waffenfertigkeit</h2>
+<p>Jeder spieler Charaktär hat mehrere Waffenfertigkeiten welche zur folge haben das der charaktär waffen arten nutzen kann. dann ist die Waffenfertigkeit für einen waffe noch in stufen eingestufft nähmlich kann die waffe nicht benutzen: d.h. der spieler muss bei jedem angrief mit dieser waffe mit nachteil würfeln.
+er hat kann die waffe nutzen: d.h. der spieler kann die waffe ganz normal nutzen und kriegt kein vor oder nachteil bei der nutzung dieser und er ist profesio nell in der nutzung seiner waffe: d.h. der spieler kiegt einen vorteil bei krit würfen mit der waffe und +1 auf alle treffer proben</p>
+
+<h2>8.Schildfertigkeit</h2>
+  <p>Schilder geben einem Characktär die möglichkeit alle Angriffe Zu blokiern und damit den Schaden zuhalbieren<br>
+  sobalt man einen punkt in Schildfertigkeit hat kann mann sie nutzen und schaltet damit die möglichkeit frei jenach Schild und Schildfertigkeit eine W20 probe probe zuwerfen auf einen vom Schild angegebenen zielwert<br>
+  Die AP Kosten betragen standartmäßig 10 AP</p>
+  
+<h2>9. Bewegung und Stealth-System</h2>
+
+<h3>9.1 Bewegungsrate und Grunde Regeln</h3>
+<p>Jede Figur hat eine Bewegungsrate (BR) in Metern pro Runde. Die Bewegung wird in volle BR-Einheiten gerechnet.</p>
+<ul>
+  <li>Erste BR-Einheit pro Runde: <strong>kostenlos</strong> (0 AP).</li>
+  <li>Jede weitere volle BR-Einheit: <strong>+1 AP</strong>.</li>
+</ul>
+
+<h3>9.2 Modifikatoren auf Bewegung</h3>
+<ul>
+  <li><strong>Rüstung oder Last:</strong> je Laststufe −1 m BR (DM entscheidet Laststufen).</li>
+  <li><strong>Schleichen:</strong> Geschwindigkeit halbiert (aufgerundet), kostet +1 AP extra, siehe 8.4.</li>
+</ul>
+
+<h3>9.3 Sichtfeld und Licht</h3>
+<p>Wir nutzen ein einfaches Hell/Dunkel-Modell und die Sichtlinie (Line of Sight).</p>
+<ul>
+  <li><strong>Hell:</strong> normale Sichtreichweite (z. B. 30 m, kampfabhängig).</li>
+  <li><strong>Dunkel:</strong> keine Sicht außer in 6 m ohne Lichtquelle.</li>
+  <li><strong>Lichtquellen:</strong> definieren einen hellen Radius (Beispiel: Fackel 9 m).</li>
+  <li><strong>Sichtlinie:</strong> Eine gerade Linie ohne blockierende Hindernisse zwischen Beobachter und Ziel bedeutet Sicht.</li>
+</ul>
+
+<h3>9.4 Stealth und Verstecken</h3>
+<p>Stealth ist eine Aktion, die Bewegung und Wahrnehmung miteinander verknüpft. Es gibt aktive und passive Komponenten.</p>
+
+<h4>Passive Wahrnehmung</h4>
+<p>Passive Wahrnehmung = 10 + Warnehmungs-Modifikator.</p>
+<p>Modifikatoren:</p>
+<ul>
+  <li>Ziel in Dunkelheit: −5 auf Passive Wahrnehmung.</li>
+  <li>Teilweise Deckung: −2 auf Passive Wahrnehmung.</li>
+  <li>Distanz: außerhalb 15 m → −2 pro weiterer 15 m.</li>
+</ul>
+
+<h4>Aktives Verstecken</h4>
+<ol>
+  <li>Kostet 1 AP (außer es wird während einer anderen Aktion erklärt — DM entscheidet im Einzelfall).</li>
+  <li>Wurf: Schleichen-Wert (SL) + 1W20 gegen die passive Wahrnehmung aller Gegner, die Sichtlinie zum Versteckenden haben.</li>
+  <li>Gelingt der Wurf gegen alle relevanten Gegner → Zustand <strong>Versteckt</strong>. Misslingt er gegen mindestens einen → bleibt sichtbar.</li>
+</ol>
+
+<h4>Effekte von Versteckt</h4>
+<ul>
+  <li>Angriffe aus Versteckt gewähren Vorteil bzw. garantieren Hinterhalts-Boni (DM entscheidet genaue Boni).</li>
+  <li>Sobald der Versteckte angreift, sprintet oder in helles Licht tritt, endet der Zustand Versteckt sofort.</li>
+</ul>
+
+<h3>9.5 Tarnungszustände</h3>
+<p>Nur drei einfache Zustände:</p>
+<ul>
+  <li><strong>Sichtbar:</strong> Jeder kann die Figur sehen.</li>
+  <li><strong>Versteckt:</strong> Ungesehen; Angriffe erhalten Hinterhaltsboni; muss durch Aktionen oder feindliche Wahrnehmung gebrochen werden.</li>
+  <li><strong>Enthüllt:</strong> War vorher versteckt, ist jetzt entdeckt; kann erneut versuchen, sich zu verstecken.</li>
+</ul>
+
+<h3>9.6 AP-Übersicht (Bewegung und Stealth)</h3>
+<ul>
+  <li>Erste BR-Einheit: 0 AP</li>
+  <li>Jede weitere volle BR-Einheit: +1 AP</li>
+  <li>Schleichen (halbe BR): +1 AP</li>
+  <li>Verstecken-Aktion: +1 AP (SL-Wurf gegen passive Wahrnehmung)</li>
+</ul>
+<p><strong>Beispiel:</strong> Schurke BR 6 m, bewegt 12 m schleichen → erste 6 m = 0 AP, zweite 6 m = +1 AP, Schleichen = +1 AP; Verstecken am Ende = +1 AP + SL-Wurf → gesamt 3 AP + Wurf.</p>
+</div>
+
+
+<script src="header.js"></script>
+</body>

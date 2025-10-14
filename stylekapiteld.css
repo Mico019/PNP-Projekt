@@ -1,0 +1,46 @@
+body {
+  background-image: url(hintergrund1.png);
+  background-repeat: no-repeat;      
+  background-size: cover;            
+  background-position: center;       
+  background-attachment: fixed;
+  filter: brightness(1.3) contrast(0.8);
+}
+
+
+.content {
+    padding-top: 70px;       
+}
+
+.content h1{
+	color: black;
+	}
+
+.content h2{
+	color: black;
+}
+
+.content h3{
+	color: black;
+}
+
+.content ul{
+	color: black;
+}
+.content ol{
+	color: black;
+}
+.content p {
+	color: black;
+}
+
+.content li1{
+	color: red;
+}
+
+.content tr{
+	color: black;
+}
+
+
+

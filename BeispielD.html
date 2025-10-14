@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>PNP Projekt</title>
+  <meta name="description" content="Kurze Beschreibung der Webseite">
+  <meta name="author" content="Dein Name">
+  <link rel="stylesheet" href="stylekapiteld.css">
+<link rel="stylesheet" href="header.css">
+  <script src="header.js" defer></script>
+</head>
+<body>
+
+  <header id="menu"></header>
+<div class="content">
+  <h3>Beispiele: Alchemie mit Multi-Modifikator</h3>
+
+<h4>Beispiel 1: Einfacher Heiltrank (Normal, Zielwert 15)</h4>
+<p><strong>Alchemist-Attribute:</strong> Weisheit 12, Geschick 13, Wahrnehmung 11<br>
+Multi-Mod = (12 + 13 + 11) / 2 = <strong>36 / 2 = 18</strong><br>
+Zielwert für alle 3 Proben: <strong>15</strong></p>
+
+
+<p><strong>Probe 1:</strong> W20 = 13 → 13 &lt; 15 → Es fehlen 2 Punkte.<br>
+Wir zahlen 2 aus dem Multi-Mod-Vorrat → Rest: 18 – 2 = <strong>16</strong><br>
+Probe 1 geschafft.</p>
+
+<p><strong>Probe 2:</strong> W20 = 18 → 18 ≥ 15 → kein Multi-Mod nötig → Rest bleibt <strong>16</strong><br>
+Probe 2 geschafft.</p>
+
+<p><strong>Probe 3:</strong> W20 = 12 → 12 &lt; 15 → Es fehlen 3 Punkte.<br>
+Wir zahlen 3 → Rest: 16 – 3 = <strong>13</strong><br>
+Probe 3 geschafft.</p>
+
+<p><strong>Ergebnis:</strong> Alle drei Proben bestanden, 13 Punkte übrig.<br>
+Rest = <strong>13</strong> → nach Qualitäts-Tabelle = <strong>Sehr gut</strong> (+100 % Wirkung).</p>
+
+<h4>Beispiel 2: Starker Stärketrank (Stark, Zielwert 20)</h4>
+<p><strong>Alchemist-Attribute:</strong> Weisheit 14, Geschick 12, Wahrnehmung 12<br>
+Multi-Mod = (14 + 12 + 12) / 2 = <strong>38 / 2 = 19</strong><br>
+Zielwert: <strong>20</strong></p>
+
+<p><strong>Probe 1:</strong> W20 = 19 → 19 &lt; 20 → Es fehlt 1 Punkt.<br>
+Wir zahlen 1 → Rest: 19 – 1 = <strong>18</strong><br>
+Probe 1 geschafft.</p>
+
+<p><strong>Probe 2:</strong> W20 = 11 → 11 &lt; 20 → Es fehlen 9 Punkte.<br>
+Wir zahlen 9 → Rest: 18 – 9 = <strong>9</strong><br>
+Probe 2 geschafft.</p>
+
+<p><strong>Probe 3:</strong> W20 = 8 → 8 &lt; 20 → Es fehlen 12 Punkte.<br>
+Wir haben nur 9 Punkte übrig → <strong>nicht genug → Probe scheitert.</strong></p>
+
+
+<p><strong>Ergebnis:</strong> Trankbrauen misslingt bei Probe 3.<br>
+Kein fertiger Trank → Gebräu gilt als <strong>ungenießbar</strong> oder verfällt.</p>
+
+
+<h4>Beispiel 3: Legendärer Manatrank (Legendär, Zielwert 30)</h4>
+<p><strong>Alchemist-Attribute:</strong> Weisheit 16, Geschick 15, Wahrnehmung 14<br>
+Multi-Mod = (16 + 15 + 14) / 2 = <strong>45 / 2 = 22</strong><br>
+Zielwert: <strong>30</strong></p>
+
+
+<p><strong>Probe 1:</strong> W20 = 27 → 27 &lt; 30 → Es fehlen 3 Punkte.<br>
+Wir zahlen 3 → Rest: 22 – 3 = <strong>19</strong><br>
+Probe 1 geschafft.</p>
+
+<p><strong>Probe 2:</strong> W20 = 29 → 29 &lt; 30 → Es fehlt 1 Punkt.<br>
+Wir zahlen 1 → Rest: 19 – 1 = <strong>18</strong><br>
+Probe 2 geschafft.</p>
+
+<p><strong>Probe 3:</strong> W20 = 30 → 30 ≥ 30 → kein Multi-Mod nötig → Rest bleibt <strong>18</strong><br>
+Probe 3 geschafft.</p>
+
+
+<p><strong>Ergebnis:</strong> Alle drei Proben bestanden, 18 Punkte übrig.<br>
+Rest = <strong>18</strong> → nach Qualitäts-Tabelle = <strong>Episch</strong> (+200 % Wirkung, fast perfektes Brauen).</p>
+
+</div>
+
+<script src="header.js"></script>
+</body>
